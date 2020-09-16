@@ -1,6 +1,6 @@
 <?php
-$sexe = readline("Êtes vous un homme ou une femme ? :");
-if ($sexe = "homme") {
+$genre = readline("Êtes vous un homme ou une femme ? :");
+if ($genre = "homme") {
     $age = readline("Quel âge avez-vous :");
 }if ($age >= 20) {
     echo "Vous êtes imposable";
