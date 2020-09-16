@@ -7,4 +7,4 @@ if ($nb1 == 0 or $nb2 == 0) {
     echo "Le produit est négatif";
 } else if ($nb1 > 0 or $nb2 > 0 or $nb1 <= -1 or $nb2 <= -1) {
     echo "Le produit est positif";
-} //Normallement, la machine ne devrait plus donner de réponse érronée à l'utilisateur grace à ctype_alpha
+} //Note à sois même: essayer d'optimiser le programme sans faire de gros paté
