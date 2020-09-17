@@ -1,0 +1,13 @@
+Phrase:
+
+function demandeEntierPhrase()
+{
+	do
+	{
+		do
+		{
+			$nb=readline($ph);
+		} while (!is_numeric($nb));
+	} while (!is_numeric(nb*1));
+	return $nb;
+	}
