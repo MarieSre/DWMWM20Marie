@@ -2,7 +2,7 @@
 //M.S Cet exercice reprend le principe d'une caisse de supermarché
 $somme=0;
 $prix=1;
-        /*Saisie du prix de l'article*/
+        /*Saisi du prix de l'article*/
 do {
     $prix=readline("Entrer le prix de l'article :");
         $somme= $somme +$prix;
