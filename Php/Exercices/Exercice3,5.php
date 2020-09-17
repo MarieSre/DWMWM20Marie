@@ -1,6 +1,6 @@
 <?php
-$nb1 = readline("Ecrivez un nombre :");
-$nb2 = readline("Ecrivez un nombre :");
+$nb1 = readline("Entrer un premier nombre :");
+$nb2 = readline("Entrer un second nombre :");
 if ($nb1 == 0 or $nb2 == 0) {
     echo "Le produit est nul";
 } else if ($nb1 <= -1 && $nb2 > 0 or $nb1 > 0 && $nb2 < -1) {
