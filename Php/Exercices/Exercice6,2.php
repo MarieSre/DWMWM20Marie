@@ -6,5 +6,4 @@
     for ($i=0 ; $i<7 ; $i++){
         echo $tableau[$voyelle]."\t";
     }*/
-  $tableau=array("Pomme", "Poire", "Banane");
-    echo $tableau["Pomme"];
+ 
