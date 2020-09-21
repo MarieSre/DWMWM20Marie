@@ -37,7 +37,7 @@ function creerTableauAvecTaille($tailleTableau)
 {
     for ($i=0;$i<$tailleTableau;$i++)
     {
-        $tab[]=demandeEntier("Entrer une valeur");
+        $tab[]=demandeEntier("Entrer une valeur :");
     }
     return $tab;
 }
@@ -49,7 +49,7 @@ return  : renvoi le tableau rempli
 function creerTableauTermineParZero()
 {
     do{
-        $nb = demandeEntier("Entrer une valeur");
+        $nb = demandeEntier("Entrer une valeur :");
         if ($nb != 0 ) //evite que le dernier 0 entre dans le tableau
         {
             $tab[]=$nb;
