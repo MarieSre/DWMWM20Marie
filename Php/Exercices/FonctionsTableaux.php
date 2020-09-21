@@ -21,7 +21,7 @@ $tab : tableau à afficher
 function afficheTableau($tab)
 {
     echo "\n";
-    foreach ( $tab as $elt)  // le tableau est parcouru de la 1ere à la dernière case, les cases sont mises tour à tous dans $elt
+    foreach ( $tab as $elt)  // le tableau est parcouru de la 1ere à la dernière case, les cases sont mises tour à tour dans $elt
     {
         echo $elt."\t";
     }
