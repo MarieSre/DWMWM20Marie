@@ -1,11 +1,13 @@
 <?php
 
 //M.S
+
+// Note à sois même : revenir sur l'exo pour le terminer
 require "FonctionsTableaux.php"; //Appel des fonctions
 $nbr = demandeEntier("Combien de valeurs ? :");
 $tab = creerTableauAvecTaille($nbr); //Création d'un tableau de la en fonction du nombre de valeur saisis
 
-for ($i = 0 ; $i < count($tab) ; $i++)
+/*for ($i = 0 ; $i < count($tab) ; $i++)
 {
         if ($tab[0]>$tab[1])
         {
@@ -20,9 +22,9 @@ for ($i = 0 ; $i < count($tab) ; $i++)
     }
 }
 afficheTableau($tab);
-echo $sens;
+echo $sens;*/
 
-/*
+
 $valeur = 0;
 do{
     $consecutif = false;
@@ -38,5 +40,5 @@ if ($tab[$i] <$valeur )
     {
         echo "\nLes valeurs ne sont pas toutes consécutive";
     }
-}while($consecutif);*/
-// Note à sois même : revenir sur l'exo pour le terminer
+}while($consecutif);
+
