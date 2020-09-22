@@ -1,10 +1,10 @@
 <?php
 
-//V1
+//M.S V1
 
 require "FonctionsTableaux.php"; //Appel des fonctions se trouvant dans ce fichier
 
-$tab1 = creerTableauTermineParZero();
+$tab1 = creerTableauTermineParZero(); //Note à sois même: refaire l'exo avec creerTableauAvecTaille
 $valeurPos = 0;
 $valeurNeg = 0;
 
@@ -37,7 +37,7 @@ $nb = demandeEntier("Entrer une valeur :");
 if ($nb != 0) //evite que le dernier 0 entre dans le tableau
 {
 $tab[] = $nb;
-    }
+}
 } while ($nb != 0);
 return $tab;
 }
@@ -47,7 +47,7 @@ echo "\n";
 foreach ($tab as $elt) // le tableau est parcouru de la 1ere à la dernière case, les cases sont mises tour à tour dans $elt
 {
 echo $elt . "\t";
-    }
+}
 echo "\n";
 }
 
@@ -60,7 +60,7 @@ if ($tab1[$i] < 0) {
 $valeurNeg++;
 } else {
 $valeurPos++;
-    }
+}
 }
 afficheTableau($tab1);
 echo "Nombre de valeur négative : " . $valeurNeg . "\n"; //Affiche le nombre de valeur négative situé dans le tableau

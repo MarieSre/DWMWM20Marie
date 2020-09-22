@@ -1,4 +1,5 @@
-<?php // Cet exercice reprend le principe des paris sportif hippique (Tiercé, quarté et quinté)
+<?php 
+//M.S Cet exercice reprend le principe des paris sportif hippique (Tiercé, quarté et quinté)
 function factorielle($nombre) //calcule la factorielle d'un nombre **
 {
     $facto = 1;
