@@ -1,7 +1,7 @@
 <?php
 //M.S 
 require "FonctionsTableaux.php"; // Appel des fonctions
-$nbr = demandeEntier("Combien de valeur ? :");
+$nbr = demandeEntier("Combien de valeurs ? :");
 $tab = creerTableauAvecTaille($nbr);
 
 $maxi= $tab[0];
