@@ -23,13 +23,16 @@ echo "Nombre de valeur positive : " . $valeurPos; //Affiche le nombre de valeur 
 function demandeEntier($invite) // Demande un entier à l'utilisateur
 
 {
-do {
-do {
-$nombre = readline($invite);
-} while (!is_numeric($nombre)); // on verifie que la chaine de caracterer ne contient que des chiffres
+do 
+{
+    do 
+        {
+            $nombre = readline($invite);
+        } while (!is_numeric($nombre)); // on verifie que la chaine de caracterer ne contient que des chiffres
 } while (!is_int($nombre * 1)); // on vérifie que le nombre est entier (pas réel)
-return $nombre; //renvoi le nombre saisi
+  return $nombre; //renvoi le nombre saisi
 }
+
 function creerTableauTermineParZero()
 {
 do {

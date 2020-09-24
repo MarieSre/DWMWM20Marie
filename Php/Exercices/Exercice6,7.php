@@ -5,4 +5,5 @@ for ($i= 0 ; $i<9 ; $i++){
     
 } foreach ($tableau as $elt){
     echo $elt ." | "; //Affichage du tableau
-} echo "\n"."La moyenne est de  : ". array_sum($tableau) / count($tableau);
+} 
+echo "\n"."La moyenne est de  : ". array_sum($tableau) / count($tableau);
