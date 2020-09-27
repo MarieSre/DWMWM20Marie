@@ -1,9 +1,9 @@
 <?php
 // M.S
 
-$heure = readline("Entrer le nombre d'heures :"); // Saisi de l'heure par l'utilisateur
-$minute = readline("Entrer le nombre de minutes :"); // Saisi des minutes par l'utilisateur
-$seconde = readline("Entrer le nombre de secondes :"); // Saisi des secondes par l'utilisateur
+$heure = readline("Entrer le nombre d'heures :"); // Saisie de l'heure par l'utilisateur
+$minute = readline("Entrer le nombre de minutes :"); // Saisie des minutes par l'utilisateur
+$seconde = readline("Entrer le nombre de secondes :"); // Saisie des secondes par l'utilisateur
 
 /*if (($heure > -1) && ($heure <= 23))
 {
@@ -24,4 +24,6 @@ $heure++;
 $minute = 0;
 }*/
 
-echo "Dans une minute, il sera " . $heure . " heure(s) , " . $minute . " minutes(s) et " . $seconde . " seconde(s) ."; // Affichage de l'heure une secode plus tard
+// Affichage de l'heure une secode plus tard
+
+echo "Dans une minute, il sera " . $heure . " heure(s) , " . $minute . " minutes(s) et " . $seconde . " seconde(s) ."; 

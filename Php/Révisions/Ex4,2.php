@@ -18,4 +18,6 @@ if (($minute > -1) && ($minute <= 59)) // Ajoute une minute
     $minute = 0;
 }
 
-echo "Dans une minute, il sera " . $heure . " heure(s) et " . $minute . " minutes(s) ."; // Affichage de l'heure une minute plus tard
+// Affichage de l'heure une minute plus tard
+
+echo "Dans une minute, il sera " . $heure . " heure(s) et " . $minute . " minutes(s) ."; 

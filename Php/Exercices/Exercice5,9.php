@@ -17,7 +17,8 @@ do {
         $bd5=0;
     while ($rendu>=10){                                            
         $rendu=$rendu-10;                                 
-        $bd10++;}                               /*} Cette partie va permettre de calculer le nombre de billet de 10 euros, de 5 euros ainsi que le restant de monnaie qu'il faut rendre*/
+        $bd10++;
+    }                               /*} Cette partie va permettre de calculer le nombre de billet de 10 euros, de 5 euros ainsi que le restant de monnaie qu'il faut rendre*/
      while ($rendu>=5){
         $rendu=$rendu-5;
         $bd5++;

@@ -5,13 +5,13 @@ $copie = readline("Nombre de photocopies :"); // Saisi du nombre de photocopie(s
 
 $prix = 0;
 
-if ($copie > 10) // S'il y a plus de dixaine photocopies
+if ($copie > 10) // S'il y a plus d'une dixaine photocopies
 {
 
     $prix = 10 * 0.10;
     $copie = $copie - 10;
 
-    if ($copie > 20)  // S'il y a plus de vingtaine photocopies
+    if ($copie > 20)  // S'il y a plus d'une vingtaine photocopies
     {
         $prix = $prix + (20 * 0.09);
         $copie = $copie - 20;
