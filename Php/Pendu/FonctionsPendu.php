@@ -24,7 +24,7 @@ function afficherTableau($tab)
  * Choisis un mot au hasard parmi la liste suivante
  */
 
-function choisirMot()
+function creer_dico()
 {
     //Cree le dictionnaire de mots
     $tabMots[] = "AEROPORT";
