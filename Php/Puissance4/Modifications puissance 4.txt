@@ -1,0 +1,11 @@
+	Pour commencer, il faut établir les règles du jeu. Ensuite pour ce qui concerne les fonctions:
+	
+	selectionPosition: Il ne faut pas forcément choisir la ligne vu que le pion descend en bas d'une colonne.
+	
+	remplirTableau: Il faudrait faire en sorte que la console détermine si le pion peut descendre ou non (si la colonne choisis n'est pas déjà pleine, voir plateauPlein).
+	
+	lancerPartie: Il faudra changer le message de bienvenue et ajouter les fonctions modifiées
+	
+	plateauPlein: 
+	
+	
