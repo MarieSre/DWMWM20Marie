@@ -62,7 +62,7 @@ class Famille
 
     // Autres méthodes
 
-    public function toString()
+    public function toString() // Description de la famille
     {
         return "La famille est composé de Monsieur ". $this->getPere()->getNom()." ". $this->getPere()->getPrenom() . " et de Madame ". $this->getMere()->getNom(). " ". $this->getMere()->getPrenom(). ". Ils possèdent une voiture de la marque ". $this->getVoiture()->getMarque(). ".";
     }

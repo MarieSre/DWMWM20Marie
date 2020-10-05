@@ -102,17 +102,23 @@ class Employe
      *
      * @return String
      */
-    public function toString()
+    public function toString()  // Affichage
     {
         return "M/Mme". $this->getNom(). " ". $this->getPrenom(). " a été embauché le ". $this->getDateEmbauche(). " pour le poste de ". $this->getJob(). " au service ". $this->getService(). ".\nLe salaire annuel de ce poste est de ". $this->getSalaire();
     }
 
-    public function anciennete($entree)
+/**
+ * 
+ * @param int inval Retourne la valeur numérique entière équivalente d'une variable 
+ * @param new DateTime()  DateTime est une classe représentant une date précise
+ */
+
+    public function anciennete($entree)     // Fonction calculant les années d'ancienneté
     {
        $entree->$this->getDateEmbauche();
-       $actuelle = new DateTime('now');
+       $actuelle = new DateTime('now');     
        $interval = $entree->diff($actuelle);
-       return intval(($interval->format('%y'))); // Retourne l'entier contenant l'année d'ancienneté
+       return intval(($interval->format('%y'))); // Retourne l'entier contenant l'année d'ancienneté 
     }
 
 

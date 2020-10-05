@@ -51,17 +51,17 @@ class Rectangle
 
     // Autres méthodes
 
-    public function toString()
+    public function toString() // Description de la figure géométrique
     {
         return "Longueur : " . $this->getLongueur() . "\n" . "Largeur : " . $this->getLargeur() . "\n" . "Périmètre : " . $this->perimetre() . "\n" . "Aire : " . $this->aire() . " m²" . "\n"; 
     }
 
-    public function perimetre()
+    public function perimetre() // Calcul du périmètre
     {
         return ($this->getLongueur() + $this->getLargeur()) * 2;
     }
 
-    public function aire()
+    public function aire() // Calcul de l'aire
     {
         return ($this->getLongueur() * $this->getLargeur());
     }
@@ -71,10 +71,10 @@ class Rectangle
         if ($this->getLongueur() == $this->getLargeur()) {
             return "Il s'agit d'un carré.\n"; // Si la longueur est égal à la largeur alors c'est un carré
         }
-        return "Il ne s'agit pas d'un carré.\n";
+        return "Il ne s'agit pas d'un carré.\n"; // Sinon ce n'en est pas un
     }
 
-    public function afficherRectangle()
+    public function afficherRectangle() // Affichage
     {
         echo $this->toString();
     }

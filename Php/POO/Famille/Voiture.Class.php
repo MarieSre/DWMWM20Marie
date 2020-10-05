@@ -66,12 +66,13 @@ class Voiture
     public function toString()
     {
         $reponse = "C'est une voiture de la marque " . $this->_marque . " Modèle " . $this->_modele . ". Elle a " . $this->_km . " kilomètres au compteur.\n";
-        return $reponse;
+        return $reponse; // Ou remplacer $reponse par return avant le string
     }
 
-    public function equalsTo($obj)
+    public function equalsTo($obj) // Vérifie si les valeurs sont égales ou non
     {
-        if ($this->_marque == $obj && $this->_modele == $obj && $this->_km == $obj) {
+        if ($this->_marque == $obj && $this->_modele == $obj && $this->_km == $obj)  
+        {
             return true;
         }
         return false;
@@ -79,9 +80,11 @@ class Voiture
 
     public function compareTo($obj)
     {
-        if ($this->_km == $obj->getKm()) {
+        if ($this->_km == $obj->getKm()) // Compare le nombre de kilomètre
+        { 
             return 0;
-        } else if ($this->_km > $obj->getKm()) {
+        } else if ($this->_km > $obj->getKm()) 
+        {
             return 1;
         } else {
             return -1;

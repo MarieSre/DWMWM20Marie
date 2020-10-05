@@ -1,6 +1,6 @@
 <?php
 
-function ChargerClasse($classe)
+function ChargerClasse($classe) // Fonction qui évite d'écrire plusieurs require
 {
     require $classe.".Class.php";
 }
@@ -20,4 +20,4 @@ var_dump($p2);
 echo "\n";
 var_dump($v);
 echo "\n";
-echo $famille->toString();
+echo $famille->toString();  // Affichage du toString de la classe Famille
