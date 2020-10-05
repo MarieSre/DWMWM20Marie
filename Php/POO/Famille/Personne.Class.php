@@ -1,7 +1,7 @@
 <?php
 //M.S
 
-class Personne1
+class Personne
 {
     //Attributs
     private $_nom;
@@ -42,7 +42,7 @@ class Personne1
     //Constructeur
 
     // Constructeur
-    public function __construct()
+    public function __construct($options)
     {
         if (!empty($options)) // empty : renvoi vrai si le tableau est vide
         {
@@ -66,7 +66,7 @@ class Personne1
 
     function toString()
     {
-        $reponse = "Cette personne s'appelle ". $this->_prenom. " " . $this->_nom .". Il/Elle est agé de ". $this->_age ." ans.\n";
+        $reponse = "Cette personne s'appelle ". $this->getNom(). " " . $this->getPrenom() .". Il/Elle est agé de ". $this->getAge() ." ans.\n";
         return $reponse;
     }
 
@@ -95,3 +95,6 @@ class Personne1
         }
     }
 }
+
+$n1 = new Personne (["nom"=>"Serrure","prenom"=>"Marie","age"=>24]);
+var_dump($n1);

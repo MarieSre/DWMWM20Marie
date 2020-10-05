@@ -41,7 +41,7 @@ class Voiture
     }
 
     // Constructeur
-    public function __construct()
+    public function __construct($options)
     {
         if (!empty($options)) // empty : renvoi vrai si le tableau est vide
         {
