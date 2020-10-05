@@ -112,9 +112,7 @@ class Employe
        $entree->$this->getDateEmbauche();
        $actuelle = new DateTime('now');
        $interval = $entree->diff($actuelle);
-       return $interval([$interval->format('%y')])
-
-
+       return intval(($interval->format('%y'))); // Retourne l'entier contenant l'année d'ancienneté
     }
 
 
