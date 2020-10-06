@@ -4,21 +4,22 @@ class Agence
 {
   
     /*****************Attributs***************** */
-    private $_nom;
+    private $_nomAgence;
     private $_adresse;
     private $_codePostal;
     private $_ville;
+    private $_employes;
 
     /*****************Accesseurs***************** */
 
-    public function getNom()
+    public function getNomAgence()
     {
-        return $this->_nom;
+        return $this->_nomAgence;
     }
 
-    public function setNom($nom)
+    public function setNomAgence($nomAgence)
     {
-        $this->_nom = $nom;
+        $this->_nomAgence = $nomAgence;
     }
 
     public function getAdresse()
@@ -51,6 +52,17 @@ class Agence
         $this->_ville = $ville;
     }
     
+    
+    public function getEmployes()
+    {
+        return $this->_employes;
+    }
+
+    public function setEmployes($employes)
+    {
+        $this->_employes = $employes;
+    }
+
     /*****************Constructeur***************** */
 
     public function __construct($options)
@@ -81,8 +93,18 @@ class Agence
      */
     public function toString()
     {
-        return "";
+        return "M/Mme " . $this->getEmployes()->getNom(). " ". $this->getEmployes()->getPrenom(). " est rattaché à l'agence " . $this->getNomAgence(). " qui se situe à cette adresse : ". $this->getAdresse(). " ". $this->getCodePostal(). " ". $this->getVille();
     }
+
+    
+
+    public function restauration()
+    {
+        $ticketResto =($this->getNomAgence());
+    }
+
+
+
 
     /**
      * Renvoi vrai si l'objet en paramètre est égal à l'objet appelant
@@ -90,7 +112,7 @@ class Agence
      * @param [type] obj
      * @return bool
      */
-    public function equalsTo($obj)
+    public function equalsTo()
     {
         return true;
     }
@@ -110,4 +132,5 @@ class Agence
     }
 
  
+
 }

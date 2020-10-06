@@ -11,6 +11,7 @@ class Employe
     private $_salaire;
     private $_service;
     private static $_compteur;
+    private $_agence;
 
     /*****************Accesseurs***************** */
 
@@ -84,6 +85,16 @@ class Employe
     public static function setCompteur($compteur)
     {
         self::$_compteur = $compteur;
+    }
+
+    public function getAgence()
+    {
+        return $this->_agence;
+    }
+
+    public function setAgence($agence)
+    {
+        $this->_agence = $agence;
     }
 
     /*****************Constructeur***************** */
@@ -167,5 +178,7 @@ class Employe
         return $this->primeAnciennete() + $this->primeSalaireAnnuel();
 
     }
+
+
 
 }
