@@ -10,6 +10,7 @@ class Employe
     private $_job;
     private $_salaire;
     private $_service;
+    private static $_compteur;
 
     /*****************Accesseurs***************** */
 
@@ -38,7 +39,7 @@ class Employe
         return $this->_dateEmbauche;
     }
 
-    public function setDateEmbauche($dateEmbauche)
+    public function setDateEmbauche(DateTime $dateEmbauche)
     {
         $this->_dateEmbauche = $dateEmbauche;
     }
@@ -73,7 +74,17 @@ class Employe
         $this->_service = $service;
     }
 
+    /*************** Méthode static ********************** */
 
+    public static function getCompteur()
+    {
+        return self::$_compteur;
+    }
+
+    public static function setCompteur($compteur)
+    {
+        self::$_compteur = $compteur;
+    }
 
     /*****************Constructeur***************** */
 
@@ -83,6 +94,7 @@ class Employe
         {
             $this->hydrate($options);
         }
+        self::$_compteur ++;
     }
     public function hydrate($data)
     {
@@ -102,24 +114,58 @@ class Employe
      *
      * @return String
      */
-    public function toString()  // Affichage
+    public function toString() // Affichage
+
     {
-        return "M/Mme". $this->getNom(). " ". $this->getPrenom(). " a été embauché le ". $this->getDateEmbauche(). " pour le poste de ". $this->getJob(). " au service ". $this->getService(). ".\nLe salaire annuel de ce poste est de ". $this->getSalaire();
+        return "M/Mme  " . $this->getNom() . " " . $this->getPrenom() . " a été embauché le " . $this->getDateEmbauche()->format('Y') . " pour le poste de " . $this->getJob() . " au service " . $this->getService() . ".\nLe salaire annuel de ce poste est de " . $this->getSalaire();
+    }
+
+
+    public static function compareTonNomPrenom($obj1, $obj2)
+    {
+        if ($obj1->getNom() < $obj2->getNom())
+        {
+            return -1;
+        }
+        else if ($obj1->getNom > $obj2->getNom())
+        {
+            return 1;
+        }
+
     }
 
 /**
- * 
- * @param int inval Retourne la valeur numérique entière équivalente d'une variable 
+ *
+ * @param int inval Retourne la valeur numérique entière équivalente d'une variable
  * @param new DateTime()  DateTime est une classe représentant une date précise
  */
 
-    public function anciennete($entree)     // Fonction calculant les années d'ancienneté
+    public function anciennete() // Fonction calculant les années d'ancienneté
+
     {
-       $entree->$this->getDateEmbauche();
-       $actuelle = new DateTime('now');     
-       $interval = $entree->diff($actuelle);
-       return intval(($interval->format('%y'))); // Retourne l'entier contenant l'année d'ancienneté 
+
+        $entree = $this->getDateEmbauche();
+        $actuelle = new DateTime('now');
+        $interval = $entree->diff($actuelle, true);
+        return intval(($interval->format('%Y'))); // Retourne l'entier contenant l'année d'ancienneté
     }
 
+    private function primeSalaireAnnuel()
+    {
+        $primeSalaire = ($this->getSalaire() * 1000) * 0.05;
+        return floatval($primeSalaire);
+    }
+
+    private function primeAnciennete()
+    {
+        $primeAnciennete = ($this->getSalaire() * 1000) * 0.02 * $this->anciennete();
+        return floatval($primeAnciennete);
+    }
+
+    public function prime()
+    {
+        return $this->primeAnciennete() + $this->primeSalaireAnnuel();
+
+    }
 
 }
