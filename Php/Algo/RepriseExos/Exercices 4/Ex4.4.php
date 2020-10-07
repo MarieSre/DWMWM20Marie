@@ -5,6 +5,7 @@
 
 $copie = readline("Combien de photocpies avez-vous acheté ? ");
 
+$prix = 0;
 if ($copie <= 10) 
 {
 
