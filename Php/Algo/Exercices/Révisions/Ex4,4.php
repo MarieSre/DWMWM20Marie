@@ -20,7 +20,8 @@ if ($copie > 10) // S'il y a plus d'une dixaine photocopies
         {
             $prix = $prix + ($copie * 0.08); // S'il y a plus d'une trentaine de photocopies
         }
-    } else 
+    } 
+    else 
     {
 
         $prix = $prix + ($copie * 0.09); 
