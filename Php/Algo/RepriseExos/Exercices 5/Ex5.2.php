@@ -2,16 +2,16 @@
 
 // M.S
 
-$nb = readline("Entrer un nombre : ");
-
 do
 {
+    $nb = readline("Entrer un nombre : ");
     if($nb < 10)
     {
-        echo "Plus grand !";
+        echo "Plus grand !\n";
     }
-    else
+    else if ($nb > 20)
     {
-        echo "Plus petit !";
+        echo "Plus petit !\n";
     }
-}while ($nb < 10 && $nb > 20);
+}while ($nb < 10 || $nb > 20);
+echo "Nombre valide";
