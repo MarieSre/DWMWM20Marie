@@ -1,7 +1,7 @@
 <?php
 //M.S
 
-require "FonctionsTableaux.php"; // Appel d'une fonction
+require "../FonctionsTableaux.php"; // Appel d'une fonction
 $nb= demandeEntier("Entrer un nombre :"); // Obligatien de saisir un entier
 
 $facto = 1;

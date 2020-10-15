@@ -4,7 +4,8 @@
 echo "Racine de l'équation du second degré\n";
 echo "Y= aX² + bX + c";
 
-do {
+do 
+{
     echo "\n";
     $a = readline("Quel est la valeur de a :");
     $b = readline("Quel est la valeur de b :"); // On définit $a , $b et $c
@@ -14,7 +15,9 @@ do {
     if (($a == 0) && ($b == 0)) // On ne peut faire d'équation avec 0
     {
         echo "Ce n'est pas une équation";
-    } else if ($a == 0) { // Esuation du premier degré
+    } 
+    else if ($a == 0) // Equation du premier degré
+    { 
         echo "L'equation est du 1er degré !\n" . "L'équation s'annule pour x=-(c/b) :" . $x ."\n";
         $x = $c / $b;
     }

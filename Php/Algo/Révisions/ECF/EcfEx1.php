@@ -18,6 +18,7 @@ do {
 
 } while ($reponse == "O");
 
-if ($reponse == "N") {
+if ($reponse == "N") 
+{
     echo "Au revoir et à bientôt"; // Le programme se terminera si l'utilisateur répond "non"
 }

@@ -9,7 +9,7 @@ $rayon = [10000, 12000, 4500, 8000, 16000, 2500];
 
 echo "**** STATISTIQUES AVIONS ****\n";
 
-do{
+do {
     $code = strtoupper(readline ("Veuillez renseigner le code de l'avion : "));
     for ($i = 0; $i < count($codeAvion); $i++)  // On recherche l'avion selon son codeS
     {
@@ -23,10 +23,10 @@ do{
     }
     $recherche = strtoupper(readline ("Voulez-vous effectuer une autre recherche (O/N) :"));
 
-}while ($recherche == strtoupper("O")); // On boucle tant que la réponse est O
+} while ($recherche == strtoupper("O")); // On boucle tant que la réponse est O
 
 
-do{
+do {
     $plusRapide = 0;
     for ($i = 0; $i < count($vitesse); $i++) // On effectue un calcul pour déterminerquel est l'avion le plus rapide
     {

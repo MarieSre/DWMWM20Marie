@@ -38,8 +38,6 @@ while ($rendu >= 5)
     $bd5++;
 }
 
-
-
 // Affichage de la monnaie rendu
 
 echo "Billet(s) de 10 euros : ". $bd10 . "\nBillet(s) de 5 euros : ". $bd5 . "\nPièce(s) d'1 euro : ". $rendu;

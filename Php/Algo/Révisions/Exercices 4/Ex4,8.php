@@ -1,7 +1,7 @@
 <?php
 //M.S
 
-require "FonctionsTableaux.php";
+require "../FonctionsTableaux.php";
 
 /*Requête pour définir $jour , $mois et $annee.
 L'utilisateur est obligé de rentrer un entier*/
