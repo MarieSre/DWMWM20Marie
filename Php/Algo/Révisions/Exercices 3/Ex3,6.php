@@ -1,32 +1,31 @@
 <?php
 
-//M.S
+// M.S
 
-$age = readline ("Quel âge a votre enfant ? "); // Saisi de l'âge de l'enfant
+// Appel de la fonction demandeEntier()
+require "../FonctionsTableaux.php";
 
-switch($age)
+// Saisie de l'âge de l'enfant
+$age = demandeEntier("Quel âge a votre enfant : ");
+
+// Définition des catégories
+if (($age == 6) || ($age == 7))
 {
-    case '6': // Si l'enfant a entre 6 à 7 ans il sera dans la catégorie des poussins
-    case '7':
-        echo "Poussin";
-    break; 
-
-    case '8':   // Si l'enfant a entre 6 à 7 ans il sera dans la catégorie des pupilles
-    case '9':
-        echo "Pupille";         
-    break;
-
-    case '10';  // Si l'enfant a entre 6 à 7 ans il sera dans la catégorie des minimes
-    case '11';
-        echo "Minime";
-    break;
-
-    case '12':  // Si l'enfant a entre 6 à 7 ans il sera dans la catégorie des cadets
-    case '13':
-        echo "Cadet";
-    break;
-
-    default:        // Si l'enfant est trop jeune ou trop âgé, il sera classé dans d'autres catégories
-        echo "Autre catégorie";
-    break;
+    echo "Catégorie : Poussin";
+}
+else if (($age == 8) || ($age == 9))
+{
+    echo "Catégorie : Pupille";
+}
+else if (($age == 10) || ($age == 11))
+{
+    echo "Catégorie : Minime";
+}
+else if ($age >= 12)
+{
+    echo "Catégorie : Cadet";
+}
+else     // Si l'enfant est trop jeune
+{
+    echo "Autre catégorie";
 }

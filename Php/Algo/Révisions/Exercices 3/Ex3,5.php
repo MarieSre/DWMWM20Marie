@@ -1,17 +1,21 @@
 <?php
 
-$nb1 = readline ("Entrer un premier nombre :"); // Saisi de deux nombres par l'utilisateur
-$nb2 = readline ("Entrer un second nombre :");
+// M.S
 
-if  (($nb1 == 0) || ($nb2 == 0))  // SI l'utilisateur rentre 0, le produit sera nul
-{
-    echo "Le produit est nul";
+// Saisie de deux nombres
+$n1 = readline("Entrer un nombre : ");
+$n2 = readline("Entrer un second nombre : ");
 
-} else if (($nb1 <= 0) || ($nb2 < 0)) // Si l'un des deux nombres est négatif, alors leur produit sera négatif
+// On teste les nombres
+if (($n1 == 0) && ($n2 == 0))
 {
-    echo "Le produit est négatif";
-
-}  else 
+    echo "Leur produit est nul";
+}
+else if (($n1 < 0) && ($n2 < 0))
 {
-    echo "Le produit est positif";
+    echo "Leur produit est négatif";
+}
+else    // Sinon ils seront forcément positif
+{
+    echo "Leur produit est positif";
 }

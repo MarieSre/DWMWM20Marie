@@ -1,17 +1,20 @@
 <?php
 
-$nb = readline("Entrer un nombre :"); // Saisi d'un nombre
+// M.S
 
+// Saisie de trois nombres
+$n = readline("Entrer un nombre : ");
 
-if ($nb == 0) // zero est un nombre nul
+// On vérifie la nature du nombre
+if($n == 0)
 {
     echo "Ce nombre est nul";
-
-} else if ($nb < 0) // Si $nb = -1 ou moins
+}
+else if ($n > 0)
 {
-    echo "Ce nombre est négatif"; // Ce nombre est négatif
-
-} else if ($nb > 0) 
+    echo "Ce nombre est positif";
+}
+else    // Sinon il est forcément négatif
 {
-    echo "Ce nombre est positif"; // Sinon il sera forcément positif
+    echo "Ce nombre est négatif";
 }

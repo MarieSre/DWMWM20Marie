@@ -1,8 +1,9 @@
 <?php
 // M.S
 
-$heure = readline("Entrer le nombre d'heures :"); // Saisi de l'heure par l'utilisateur
-$minute = readline("Entrer le nombre de minutes :"); // Saisi de l'heure par l'utilisateur
+// Saisie de l'heure et des minutes
+$heure = readline("Entrer le nombre d'heures :"); 
+$minute = readline("Entrer le nombre de minutes :"); 
 
 /*if (($heure > -1) && ($heure <= 23))
 {
