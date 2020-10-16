@@ -5,7 +5,6 @@
 require "../FonctionsTableaux.php";
 
 $somme = 0;
-$prix = 1;
 
 // Saisie des prix de l'articles
 do
@@ -27,6 +26,8 @@ $rendu = $montant - $somme;
 echo "Nous vous rendons : ". $rendu . " euros, soit : \n";
 $bd10 = 0;
 $bd5 = 0;
+
+// On compte le nombre de billet à rendre
 while ($rendu >= 10)
 {
     $rendu -= 10;
@@ -39,6 +40,5 @@ while ($rendu >= 5)
 }
 
 // Affichage de la monnaie rendu
-
 echo "Billet(s) de 10 euros : ". $bd10 . "\nBillet(s) de 5 euros : ". $bd5 . "\nPièce(s) d'1 euro : ". $rendu;
 

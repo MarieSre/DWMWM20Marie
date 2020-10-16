@@ -4,8 +4,9 @@
 echo "\t CALCUL D'UN CERCLE\n";
 
 do {
-
-    $rayon = readline("Quel est le rayon du cercle :\n"); // Saisi du rayon
+    
+    // Saisie du rayon
+    $rayon = readline("Quel est le rayon du cercle :\n");
     $circonference = 2 * 3.14 * $rayon;
     $surface = 3.14 * ($rayon * $rayon);
 
