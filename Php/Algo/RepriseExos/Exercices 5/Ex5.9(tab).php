@@ -26,16 +26,26 @@ echo "\n";
 echo "Nous vous rendons ". $rendu. " soit : \n";
 
 // Tableau des billets de 5 et de 10
-$rendu = ["b10" => 0, "b5" => 0];
+$monnaie = ["10" => 0, "5" => 0];
 
 
-
-
-
-
-// Affichage
-foreach($rendu as $billet => $valeur)
+while ($rendu >= 10)
 {
-    echo "Billet de ". $billet. " : ". $valeur; 
+    $rendu -= 10;
+    $monnaie["10"] += 1;        // On augmente la valeur liée à la case
 }
-echo "\n";
+while ($rendu >= 5)
+{
+    $rendu -= 5;
+    $monnaie["5"] += 1;
+}
+
+
+// Affichage des billets de 10 et de 5
+foreach($monnaie as $billet => $valeur)     
+{
+    echo " Billet de ". $billet. " : ". $valeur."\n";   
+}
+
+// Affichage du reste
+echo "Pièce de 1 euros : " . $rendu. "\n";

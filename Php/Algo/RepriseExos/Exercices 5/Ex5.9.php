@@ -28,16 +28,32 @@ $bd10 = 0;
 $bd5 = 0;
 
 // On compte le nombre de billet à rendre
-while ($rendu >= 10)
+
+while ($rendu > 5)
 {
-    $rendu -= 10;
-    $bd10++;
+    if ($rendu >= 10)
+    {
+      $rendu -= 10;
+      $bd10++;  
+    }
+    else if ($rendu >= 5)
+    {
+        $rendu -= 5;
+        $bd5++;
+    }
 }
-while ($rendu >= 5)
-{
-    $rendu -= 5;
-    $bd5++;
-}
+
+// Ou
+// while ($rendu >= 10)
+// {
+//     $rendu -= 10;
+//     $bd10++;
+// }
+// while ($rendu >= 5)
+// {
+//     $rendu -= 5;
+//     $bd5++;
+// }
 
 // Affichage de la monnaie rendu
 echo "Billet(s) de 10 euros : ". $bd10 . "\nBillet(s) de 5 euros : ". $bd5 . "\nPièce(s) d'1 euro : ". $rendu;
