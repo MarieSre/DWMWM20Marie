@@ -11,7 +11,8 @@ function creerTableauAvecTaille($tailleTableau)
 }
 
 // Création de tableau
-$tab = creerTableauAvecTaille(8);
+$longueur = demandeEntier("Quel est la taille du tableau ? ");
+$tab = creerTableauAvecTaille($longueur);
 
 $positif = 0;
 $negatif = 0;

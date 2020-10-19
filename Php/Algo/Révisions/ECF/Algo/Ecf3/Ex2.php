@@ -25,4 +25,3 @@ do
     $editer = strtolower(readline("Souhaitez-vous éditer une autre table : "));
 }while ($editer == "o");
 
-// revenir sur l'exo
