@@ -28,7 +28,7 @@ echo "Nous vous rendons ". $rendu. " soit : \n";
 // Tableau des billets de 5 et de 10
 $monnaie = ["10" => 0, "5" => 0];
 
-
+// On compte le nombre de billet à rendre
 while ($rendu >= 10)
 {
     $rendu -= 10;

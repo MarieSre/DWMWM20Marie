@@ -43,7 +43,8 @@ while ($rendu > 5)
     }
 }
 
-// Ou
+// OU
+
 // while ($rendu >= 10)
 // {
 //     $rendu -= 10;
