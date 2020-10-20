@@ -29,5 +29,5 @@ for($i = 0; $i < count($tab); $i++)
         $compteur++;
     }
 }
-//  Affichage 
+//  Affichage des notes supérieur à la moyenne
 echo "\nIl y a ". $compteur . " note(s) au dessus de la moyenne";

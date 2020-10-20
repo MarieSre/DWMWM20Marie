@@ -59,3 +59,13 @@ function creerTableauTermineParZero()
     return $tab;
 }
 
+/* 
+    Cette fonction permet de créer un tableau contenant des valeurs aléatoire
+ */
+function creerTableauAvecRand($tailleTableau) // Génère des valeurs aléatoire
+{
+    for ($i = 0; $i < $tailleTableau; $i++) {
+        $tab[] = rand(1, 100);
+    }
+    return $tab;
+}

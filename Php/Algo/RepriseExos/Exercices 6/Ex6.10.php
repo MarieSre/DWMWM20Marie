@@ -18,10 +18,10 @@ for($i = 0;$i < 8; $i++)
 
 // Affichage
 echo "\n\tPremier tableau\n";
-echo afficheTableau($tab1);
+afficheTableau($tab1);
 
 echo "\n\tSecond tableau\n";
-echo afficheTableau($tab2);
+afficheTableau($tab2);
 
 echo "\n\tTroisème tableau\n";
-echo afficheTableau($tab3);
+afficheTableau($tab3);

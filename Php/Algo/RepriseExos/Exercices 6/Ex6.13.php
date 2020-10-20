@@ -7,6 +7,7 @@ require "../FonctionsTableaux.php";
 $longueur = demandeEntier("Quelle est la taille du tableau ? ");
 $tab = creerTableauAvecTaille($longueur);
 
+// On définit les compteurs
 $max = $tab[0];
 $pos = 0;
 

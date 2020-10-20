@@ -8,7 +8,7 @@ require "../FonctionsTableaux.php";
 $tab = creerTableauAvecTaille(8);
 
 // Affichage
-echo afficheTableau($tab);
+afficheTableau($tab);
 
 // Affichage de la somme des nombres du tableau
 echo "\n".array_sum($tab);

@@ -25,7 +25,7 @@ for($i = 0; $i < count($tab1); $i++)
 
 // Affichage
 echo "\nPremier Tableau\n";
-echo  afficheTableau($tab1);
+afficheTableau($tab1);
 echo "\nSecond Tableau\n";
-echo  afficheTableau($tab2);
+afficheTableau($tab2);
 echo "Le schtroumpf est de : ". $sch;

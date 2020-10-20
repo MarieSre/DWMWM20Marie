@@ -1,12 +1,16 @@
 <?php
 
-$n = 5;
+require "../FonctionsTableaux.php";
+
 $tab = [10, 30, 40, 5, 20];
 
-for ($i = 0; $i < $n - 1; $i++) {
+// On parcourt le tableau à la recherche de la plus petite valeur
+for ($i = 0; $i < count($tab); $i++) {
     $mini = $tab[$i];
     $pos = $i;
-    for ($j = $i + 1; $j < $n; $j++) {
+
+    // On trie le tableau
+    for ($j = $i + 1; $j < count($tab); $j++) {
         if ($tab[$j] < $mini) {
             $mini = $tab[$j];
             $pos = $j;

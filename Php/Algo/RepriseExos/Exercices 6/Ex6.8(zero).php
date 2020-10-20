@@ -34,5 +34,5 @@ for($i = 0; $i < count($tab); $i++)
 }
 
 // Affichage
-echo afficheTableau($tab);
+afficheTableau($tab);
 echo "Valeur(s) positive : ". $positif. "\n". "Valeur(s) négative : ". $negatif;

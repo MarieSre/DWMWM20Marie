@@ -19,5 +19,5 @@ for($i = 0; $i < count($tab); $i++)
 
 // Affichage du tableau incrémenté
 echo "\nNouveau tableau\n";
-echo afficheTableau($tab);
+afficheTableau($tab);
 
