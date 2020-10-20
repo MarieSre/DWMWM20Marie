@@ -3,24 +3,25 @@
 
 require "../FonctionsTableaux.php";
 
-// Création du premier tableau
-$longueur1 = demandeEntier("Quelle est la taille du premier tableau ? ");
+// Saisie de la taille du premier tableau
+$longueur1 = demandeEntier("Quelle est la taille du tableau ?");
 $tab1 = creerTableauAvecTaille($longueur1);
 
-// Création du second tableau
-$longueur2 = demandeEntier("Quelle est la taille du second tableau ? ");
+// Saisie de la taille du second tableau
+$longueur2 = demandeEntier("Quelle est la taille du tableau ?");
 $tab2 = creerTableauAvecTaille($longueur2);
 
 $sch = 0;
 
-// Calcul du schtroumpf
+// On calcul le schtroumpf en parcourant les deux tableaux
 for($i = 0; $i < count($tab1); $i++)
 {
-    for($j = 0; $j < count($tab2); $j++)
+    for($j = 0;$j < count ($tab2); $j++)
     {
-        $sch += $tab1[$i] * $tab2[$j];
+        $sch += $tab1[$i] * $tab2[$j]; 
     }
 }
+
 
 // Affichage
 echo "\nPremier Tableau\n";

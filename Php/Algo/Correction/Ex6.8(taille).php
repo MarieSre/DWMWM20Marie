@@ -1,7 +1,14 @@
 <?php
 // M.S
 
-require "../FonctionsTableaux.php";
+function creerTableauAvecTaille($tailleTableau) 
+{
+    for ($i=0;$i<$tailleTableau;$i++)
+    {
+        $tab[]=demandeEntier("Entrer une valeur :");
+    }
+    return $tab;
+}
 
 // Création de tableau
 $longueur = demandeEntier("Quel est la taille du tableau ? ");
@@ -10,6 +17,7 @@ $tab = creerTableauAvecTaille($longueur);
 $positif = 0;
 $negatif = 0;
 
+// Recherche du nombre de valeur négative et positive
 for($i = 0; $i < count($tab); $i++)
 {
     if($tab[$i] > 0)

@@ -24,7 +24,6 @@ do {
             $tab[$i + 1] = $temps;
             $yapermut = true;
         }
-        afficheTableau($tab);
     }
 
 } while ($yapermut);

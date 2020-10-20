@@ -9,22 +9,22 @@ $tab = creerTableauAvecRand($longueur);
 
 
 // On parcourt le tableau à la recherche de la plus petite valeur
-for ($i = 0; $i > count($tab); $i++) 
-{
-    $max = $tab[$i];
+for ($i = 0; $i < count($tab); $i++) {
+    $mini = $tab[$i];
     $pos = $i;
 
-    // On trie le tableau
-    for ($j = $i + 1; $j > count($tab); $j--) 
-    {
-        if ($tab[$j] < $max) 
-        {
-            $max = $tab[$j];
+    // On trie le tableau dans l'ordre décroissant
+    for ($j = $i + 1; $j < count($tab); $j++) {
+        if ($tab[$j] > $mini) {
+            $mini = $tab[$j];
             $pos = $j;
         }
-    }   
-    $tab[$pos] = $tab[$i];
-    $tab[$i] = $max;
+
+    }
+    
+$tab[$pos] = $tab[$i];
+$tab[$i] = $mini;
+
 }
 
 // Ou rsort($tab);

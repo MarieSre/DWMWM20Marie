@@ -7,16 +7,17 @@ require "../FonctionsTableaux.php";
 $longueur = demandeEntier("Quelle est la taille du tableau ? ");
 $tab = creerTableauAvecTaille($longueur);
 
-echo "\nTableau\n";
-afficheTableau($tab);
+// Affichage du tableau
+echo "\nPremier tableau\n";
+echo afficheTableau($tab);
 
-// On parcourt le tableau en augmentant les valeurs
+// On augmente la valeur de chaque case du tableau
 for($i = 0; $i < count($tab); $i++)
 {
     $tab[$i]++;
 }
 
 // Affichage du tableau incrémenté
-echo "\nTableau incrémenté\n";
+echo "\nNouveau tableau\n";
 afficheTableau($tab);
 

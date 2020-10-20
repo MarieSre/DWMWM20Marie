@@ -9,7 +9,7 @@ for ($i = 0; $i < count($tab); $i++) {
     $mini = $tab[$i];
     $pos = $i;
 
-    // On trie le tableau
+    // On trie le tableau dans l'ordre croissant
     for ($j = $i + 1; $j < count($tab); $j++) {
         if ($tab[$j] < $mini) {
             $mini = $tab[$j];

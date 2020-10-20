@@ -3,20 +3,20 @@
 
 require "../FonctionsTableaux.php";
 
-$taille = demandeEntier("Quelle est la taille des tableaux ? ");
-// Création de deux tableaux
-echo "\nRemplissage du premier tableau : \n";
-$tab1 = creerTableauAvecTaille(8);
-echo "\nRemplissage du second tableau : \n";
-$tab2 = creerTableauAvecTaille(8);
+// Création du premier tableau
+$taille1 = demandeEntier("Quelle est la taille du premier tableau ? ");
+$tab1 = creerTableauAvecTaille($taille1);
+// Création du second tableau
+$taille2 = demandeEntier("Quelle est la taille du second tableau ? ");
+$tab2 = creerTableauAvecTaille($taille2);
 
 // Création du troisième tableau
-for($i = 0;$i < 8; $i++)
+for($i = 0; $i < count($tab1); $i++)
 {
-    $tab3[$i] = $tab1[$i] + $tab2[$i];  // Addition des deux précédent tableaux
+    $tab3[$i] = $tab1[$i] + $tab2[$i];  // On additione les deux tableaux
 }
 
-// Affichage
+// Affichage des tableaux
 echo "\n\tPremier tableau\n";
 afficheTableau($tab1);
 
