@@ -11,4 +11,4 @@ function motRetourne($mot)
         return ($mot);
     }
 }
-echo motRetourne("Pouet");
+echo motRetourne("bonjour");

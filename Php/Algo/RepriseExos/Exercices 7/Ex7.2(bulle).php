@@ -4,8 +4,8 @@
 require "../FonctionsTableaux.php";
 
 // Création d'un tableau avec un nombre de valeurs aléatoire
-$longueur = demandeEntier("taille du tableau : ");
-$tab = creerTableauAvecRand($nb);
+$longueur = demandeEntier ("Quelle est la taille du tableau ? ");
+$tab = creerTableauAvecRand($longueur);
 
 // On boucle tant que le tableau n'est pas trié
 do {
@@ -21,7 +21,6 @@ do {
             $trier = true;                      // On initialise le flag à vrai pour relancer la boucle
         }
     }
-
 } while ($trier);
 
 // Affichage
