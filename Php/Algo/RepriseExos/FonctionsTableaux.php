@@ -69,3 +69,14 @@ function creerTableauAvecRand($tailleTableau) // Génère des valeurs aléatoire
     }
     return $tab;
 }
+
+/* Fonction affichant un tableau associatif */
+function afficheTableauAssoc($tabAssoc)
+{
+    echo "\n";
+    foreach($tabAssoc as $key => $elt)
+    {
+        echo $key. " => ". $elt."\t";
+    }
+    echo "\n";
+}

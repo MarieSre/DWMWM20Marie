@@ -1,7 +1,6 @@
 <?php
 // M.S
 
-// Revenir sur l'exo sans regarder la correction
 
 require "../FonctionsTableaux.php";
 
@@ -13,14 +12,16 @@ $consec = true; // On initialise la variable à vrai
 $i = 0;
 
 // On regarde si la première valeur est plus petite que la seconde
-if ($tab[0] < $tab[$i + 1]) { //Sens croissant
+if ($tab[0] < $tab[$i + 1]) 
+{ //Sens croissant
     $sens = 1;
-} else {
+} 
+else 
+{
     $sens = 0; //Evite une erreur undefined variable si le tableau est décroissant
 }
 
-do 
-{
+do {
     $consec = false;
     if ($sens == 1)
     { 
