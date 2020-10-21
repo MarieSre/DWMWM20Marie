@@ -59,8 +59,8 @@ function creerTableauTermineParZero()
     return $tab;
 }
 
-/* 
-    Cette fonction permet de créer un tableau contenant des valeurs aléatoire
+/**  
+ *  Cette fonction permet de créer un tableau contenant des valeurs aléatoire
  */
 function creerTableauAvecRand($tailleTableau) // Génère des valeurs aléatoire
 {
@@ -70,7 +70,9 @@ function creerTableauAvecRand($tailleTableau) // Génère des valeurs aléatoire
     return $tab;
 }
 
-/* Fonction affichant un tableau associatif */
+/**
+ * Fonction affichant un tableau associatif 
+ */ 
 function afficheTableauAssoc($tabAssoc)
 {
     echo "\n";
