@@ -82,3 +82,37 @@ function afficheTableauAssoc($tabAssoc)
     }
     echo "\n";
 }
+
+/**
+ * Crée un tableau multidimensionnel contenant des valeurs aléatoire
+ * rand : génère une valeur aléatoire
+ * return : renvoi le tableau rempli
+ */
+function creerTableauMultiAvecRand($nombreDeLigne, $nombreDeColonne) // Génère des valeurs aléatoire
+{
+    for ($i = 0; $i < $nombreDeLigne; $i++) 
+    {
+        for ($j = 0; $j < $nombreDeColonne; $j++)
+        {
+            $tab[$i][$j]=rand(1,100);
+        }
+    }
+    return $tab;
+}
+
+
+/**
+ * Affiche un tableau multidimensionnel
+ */
+function afficheTableauMulti($tab)
+{
+
+    for($i = 0; $i < 13; $i++) // Lignes
+    {
+        for($j = 0; $j < 9; $j++) // Colonnes
+        {
+            echo $tab[$i][$j]."\t"; // Affichage
+        }
+    echo "\n";
+    }
+}
