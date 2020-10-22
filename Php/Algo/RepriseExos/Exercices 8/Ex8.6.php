@@ -14,19 +14,21 @@ $max = $t[0][0];
 $pos = 0;
 
 // On cherche la plus grande valeur du tableau
-for ($i = 0; $i < count($t); $i++) 
+for ($i = 0; $i < 13; $i++)          // Lignes
 {
-    for ($j = 0; $j < count($t); $j++) 
+    for ($j = 0; $j < 9; $j++)      // Colonnes
     {
-        if (($max < $t[$i]) && $max < $t[$j])
+        if ($max < $t[$i][$j])
         {
-            $max = $tab[$i][$j];
-            $pos = $i;
+            $max = $t[$i][$j];
+            $pos = $i. " ème ligne, ". $j ;
         }
     }
 }
 
-// Affichage
-echo "\nLa plus grande valeur du tableau est : " . $max . ", elle se situe à la case " . $pos;
+// Affichage de sa position
+echo "\nLa plus grande valeur du tableau est : " . $max . ", elle se situe à la " . $pos. " ème colonne ";
+
+
 
 

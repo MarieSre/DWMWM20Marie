@@ -32,7 +32,6 @@ afficheTableau($tab);
 afficheTableau($tab);
 
 // Tableau de variable
-
 // 6 21 39 29
 // 39 21 6 29
 // 39 29 6 21

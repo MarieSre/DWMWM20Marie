@@ -11,4 +11,3 @@ for($i = 0; $i < 6; $i++) // Lignes
     }
     echo "\n";
 }
-
