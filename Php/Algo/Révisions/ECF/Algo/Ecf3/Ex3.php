@@ -18,7 +18,7 @@ if ($genre == "fille")
          echo "Votre enfant a accès à l'espace rose ou rouge";
      }
 }
-else
+else        // Si c'est un garçon
 {
     if(($age < 6) || ($age > 10))
     {

@@ -107,9 +107,9 @@ function creerTableauMultiAvecRand($nombreDeLigne, $nombreDeColonne) // Génère
 function afficheTableauMulti($tab)
 {
 
-    for($i = 0; $i < 13; $i++) // Lignes
+    for($i = 0; $i < count($tab); $i++) // Lignes
     {
-        for($j = 0; $j < 9; $j++) // Colonnes
+        for($j = 0; $j < count($tab[0]); $j++) // Colonnes
         {
             echo $tab[$i][$j]."\t"; // Affichage
         }
