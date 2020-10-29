@@ -1,0 +1,33 @@
+/*On ne met pas de marge*/
+body{
+    margin: 0px;
+}
+/* On place les cadres*/
+.vert{
+    background-color: green;
+    width: 70vw;
+    height: 70vh;
+    float: left;
+}
+.rouge{
+    background-color: red;
+    width: 29vw;
+    height: 70vh;
+    float: right;
+    
+}
+.bleu{
+    background-color: blue;
+    width: 70vw;
+    height: 30vh;
+    float: left;
+}
+.jaune{
+    background-color: yellow;
+    width: 29vw;
+    height: 30vh;
+    float: right;
+}
+.flex{
+    display: flex;
+}

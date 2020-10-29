@@ -1,0 +1,22 @@
+#menu{
+    background-color: black;
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+    height: 5vh;
+    text-align: center;
+}
+
+menu li hover{
+    color: lightskyblue;
+
+    
+}
+#menu li a{
+    color: white;
+    font-size: 1.6em;
+}
+.photo{
+    background-image: center;
+    width: 100vw;
+}

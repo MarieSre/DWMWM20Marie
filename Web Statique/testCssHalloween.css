@@ -1,0 +1,61 @@
+/* Fond de la page*/
+
+body {
+    /* On colle l'image choisit*/
+    background-image: url(https://image.freepik.com/vecteurs-libre/modele-halloween-dessine-main-citrouille-fantome_52683-44438.jpg);
+    /* On la centre */
+    float: center;
+    /* On lui demande de ne pas se répéter*/
+    background-repeat: no-repeat;
+    /*On couvre toute la page*/
+    background-size: cover;
+    
+}
+
+header, footer {
+    background-color: orangered;
+    margin: 10px;
+    /*Défini la taille de la marge*/
+    color: purple;
+}
+
+div {
+    background-color: yellow;
+    margin: 10px;
+}
+
+#pouet {
+    background-color: orange;
+    border: 10px solid black;
+}
+
+.link {
+    color: whitesmoke;
+    font-weight: bold;
+    /* Met le texte en gras*/
+    margin: 10px;
+}
+
+.bW {
+    border: gray 3px solid;
+    color: black;
+}
+
+.eW {
+    color: grey;
+    border: black 5px solid;
+}
+
+.bR {
+    border: orangered 3px solid;
+}
+
+.eB {
+    color: indigo;
+    border: orange 2px solid;
+}
+
+header .bR {
+    color: white;
+    border: white 5px solid;
+}
