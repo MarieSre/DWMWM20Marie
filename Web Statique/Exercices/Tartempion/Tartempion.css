@@ -1,4 +1,4 @@
-#menu{
+#menu {
     background-color: black;
     display: flex;
     list-style-type: none;
@@ -7,16 +7,18 @@
     text-align: center;
 }
 
-menu li hover{
+menu li hover {
     color: lightskyblue;
 
-    
+
 }
-#menu li a{
+
+#menu li a {
     color: white;
     font-size: 1.6em;
 }
-.photo{
+
+.photo {
     background-image: center;
     width: 100vw;
 }
