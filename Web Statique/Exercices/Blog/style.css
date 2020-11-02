@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
-    padding :0;
+    padding: 0;
     list-style: none;
 }
+
 div {
     display: flex;
     flex: 0.5;
@@ -27,26 +28,30 @@ img {
     background-image: url(sideBackground.jpg);
     flex: 0.2;
 }
-.menu{
+
+.menu {
     color: black;
     position: center;
 }
+
 .articles {
     background-image: url(background.jpg);
     background-size: 100%;
     color: white;
     flex: 0.8;
 }
-footer{
+
+footer {
     display: flex;
     background-color: rgb(72, 0, 6);
     border: 2px solid black;
 }
-.animation{
+
+.animation {
     position: left;
 }
-.raccourci{
+
+.raccourci {
     display: left;
     color: burlywood;
 }
-
