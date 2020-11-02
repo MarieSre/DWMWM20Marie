@@ -16,11 +16,13 @@ header {
 
 img {
     width: 100%;
+    
 }
 
 .titre {
     flex: 2;
     justify-content: center;
+    /*Alignement vertical*/
     align-items: center;
     background-color: chocolate;
 }
@@ -30,6 +32,7 @@ img {
     background-image: url(sideBackground.jpg);
     flex: 0.2;
     text-align: center;
+    /*Alignage horizontal*/
     justify-content: center;
 
 }
@@ -62,27 +65,25 @@ footer {
 
 /*Gestion du gif*/
 .animation {
-
     height: 15vh;
     flex: 0.4;
+    
 }
 
 /*Gestion des liens du footer avec une balise de navigation*/
 
-
-nav {
+.source{
     display: flex;
-    color: burlywood;
+    flex-direction: column;
+}
+
+.lien{
+    display: flex;
+}
+
+.adresse{
+    display: flex;
     justify-content: center;
-}
-
-nav ul {
-    display: flex;
-}
-
-nav li {
-    text-align: center;
-    list-style: none;
-    margin: 0.1em 1em;
-    padding: 1em;
+    color:burlywood;
+    
 }
