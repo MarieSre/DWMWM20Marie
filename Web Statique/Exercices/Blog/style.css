@@ -9,6 +9,7 @@ div {
     flex: 0.5;
 }
 
+/*Header*/
 header {
     display: flex;
 }
@@ -24,16 +25,26 @@ img {
     background-color: chocolate;
 }
 
+/*Side gauche*/
 .gauche {
     background-image: url(sideBackground.jpg);
     flex: 0.2;
+    text-align: center;
+    justify-content: center;
+
 }
+
+/*Poser une question sur l'alignement du texte*/
 
 .menu {
-    color: black;
-    position: center;
+    color: brown;
 }
 
+a {
+    color: brown;
+}
+
+/*Articles*/
 .articles {
     background-image: url(background.jpg);
     background-size: 100%;
@@ -41,17 +52,37 @@ img {
     flex: 0.8;
 }
 
+/*Footer*/
 footer {
     display: flex;
     background-color: rgb(72, 0, 6);
     border: 2px solid black;
+    text-align: center;
 }
 
+/*Gestion du gif*/
 .animation {
-    position: left;
+
+    height: 15vh;
+    flex: 0.4;
 }
 
-.raccourci {
-    display: left;
+/*Gestion des liens du footer avec une balise de navigation*/
+
+
+nav {
+    display: flex;
     color: burlywood;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    text-align: center;
+    list-style: none;
+    margin: 0.1em 1em;
+    padding: 1em;
 }
