@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding :0;
+    list-style: none;
+}
+div {
+    display: flex;
+    flex: 0.5;
+}
+
+header {
+    display: flex;
+}
+
+img {
+    width: 100%;
+}
+
+.titre {
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+    background-color: chocolate;
+}
+
+.gauche {
+    background-image: url(sideBackground.jpg);
+    flex: 0.2;
+}
+.menu{
+    color: black;
+    position: center;
+}
+.articles {
+    background-image: url(background.jpg);
+    background-size: 100%;
+    color: white;
+    flex: 0.8;
+}
+footer{
+    display: flex;
+    background-color: rgb(72, 0, 6);
+    border: 2px solid black;
+}
+.animation{
+    position: left;
+}
+.raccourci{
+    display: left;
+    color: burlywood;
+}
+
