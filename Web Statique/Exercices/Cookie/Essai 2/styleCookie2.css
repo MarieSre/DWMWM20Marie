@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
 }
@@ -15,17 +14,20 @@ header {
     background-image: url(../image/header.jpg);
     display: flex;
 }
-footer{
+
+footer {
     display: flex;
     background-image: url(../image/fond1.png);
     background-position: top;
-    
+
 }
+
 div {
     display: flex;
     flex: 1;
 }
-img{
+
+img {
     width: 100%;
 }
 
@@ -34,11 +36,15 @@ img{
     flex-direction: column;
     flex: none;
 }
-.titrePage, .piedPage {
+
+.titrePage,
+.piedPage {
     flex: 9;
     justify-content: center;
+    
 }
-nav{
+
+nav {
     display: flex;
     flex: 1;
     background-image: url(../image/fond1.png);
@@ -46,28 +52,76 @@ nav{
     padding: 0.5em;
     justify-content: center;
 }
-.menu{
-    
+
+.menu {
+
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
     border-radius: 0.2em;
     flex: none;
-    background : linear-gradient(#06314F, #3093B2);
+    background: linear-gradient(#06314F, #3093B2);
     padding: 0.5em;
     color: white;
+    border: 2px solid #06314F;
 }
-.video{
-    display: flex;
-    flex: 1;
-    height: 50vh;
-    width: 50vw;
+.partie1{
+    padding: 1em;
+    
+    
 }
-.contenu{
-    background-color: whitesmoke;
+.video {
+    
+    height: 35vh;
+    
 }
-.titreSemaine{
-    display: flex;
+
+.contenu {
+    flex-direction: column;
+    padding: 2em;
+    background-color: #e6ece9;
+    
+}
+
+.cookieSemaine {
+    flex-direction: column;
+    flex: 8;
+    height: 35vh;
+    background-color: #f7f7f7;
+    
+    overflow-y: scroll;
+}
+
+.titreSemaine {
+    padding: 0.3em;
+    font-size: 1em;
+    font-weight: bold;
+    flex: none;
+    background: linear-gradient(black, rgb(52, 158, 233));
+    
     justify-content: center;
     
+}
+/* aside{
+    border: blue 1px solid;
+    border-radius: 0.5;
+} */
+.partie2{
+    
+    flex-direction: column;
+}
+.texteArticle{
+    padding: 2em;
+    
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+}
+.titreArticle{
+    padding: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    
+    justify-content: center;
 }
