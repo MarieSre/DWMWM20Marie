@@ -1,0 +1,21 @@
+nav{
+    display: flex;
+    width: 40vw;
+}
+
+.menu{
+    display: flex;
+    
+}
+.enfant{
+    position: relative;
+    margin: 1em;
+}
+.enfant:hover .sous-menu{
+    display: flex;
+}
+.sous-menu{
+    display: none;
+    flex-flow: column wrap;
+    position: absolute;
+}
