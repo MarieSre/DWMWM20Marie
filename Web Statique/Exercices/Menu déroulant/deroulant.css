@@ -5,17 +5,31 @@ nav{
 
 .menu{
     display: flex;
-    
 }
 .enfant{
     position: relative;
     margin: 1em;
+    background-color: lightcoral;
+    border-radius:  0.5em;
+    padding: 0.5em;
+    align-items: center;
+    justify-content: center;
+    max-height: 1em;
+}
+.enfant:hover{
+    background-color: linen;
+    box-shadow: 0.3em 0.3em 0.3em lightgrey;
+    
 }
 .enfant:hover .sous-menu{
     display: flex;
+    border-radius: 1em;
+    background-color: lemonchiffon;
+    padding: 0.5em;
 }
 .sous-menu{
     display: none;
     flex-flow: column wrap;
     position: absolute;
+    
 }
