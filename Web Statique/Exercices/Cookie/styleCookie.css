@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    flex: 1;
+}
+
+div{
+    display: flex;
+    flex: 0.5
+}
+body{
+    padding: 2em 5em 0em 5em;
+    background-image: url(../Cookie/image/fond.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+header{
+    
+    background-image: url(../Cookie/image/header.jpg);
+    margin: 0;
+    padding: 2em;
+    border: 1px solid black
+}
+.img{
+    width: 100%;
+}
+
+.cookie{
+    position: absolute;
+    height: 9vh;
+    width: 8vw;
+    margin-left: 1em;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+}
+.titre{
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.menu{
+    flex-direction: column;
+    background-image: url(../Cookie/image/fond1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+}
+.bouton{
+    border: white 1px solid;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    color: white;
+    max-height: 1em;
+}
+.bouton:hover{
+    box-shadow: teal;
+}
+.fond{
+    background-size: cover;
+    
+}
+
+.article{
+    background-color: white;
+}
