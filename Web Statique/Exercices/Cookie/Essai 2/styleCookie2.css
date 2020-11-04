@@ -1,6 +1,5 @@
 /****************************** GLOBAL ******************************/
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
 }
@@ -25,7 +24,7 @@ video {
     
     width: 100%;
 }
-
+/*Permet de régler l'espacement entre le header et le cookie semaine*/
 .espace{
     flex: 0.2;
 }
@@ -57,8 +56,7 @@ footer {
     display: block;
 }
 
-.titrePage,
-.piedPage {
+.titrePage, .piedPage {
     flex: 9;
     justify-content: center;
 }
@@ -74,14 +72,14 @@ footer {
 
 /****************************** MENU ******************************/
 
+
 nav {
     display: flex;
-    flex: 1;
+    justify-content: center;
     background-image: url(../image/fond1.png);
     background-position: left;
-    padding: 0.5em;
-    justify-content: center;
-
+    padding: 0.2vw 1em;
+    
 }
 
 .menu {
@@ -98,11 +96,9 @@ nav {
 
 .menu:hover .sousmenu {
     display: flex;
-
 }
 
 .sousmenu {
-
     display: none;
     flex-direction: column;
     position: absolute;
@@ -113,8 +109,8 @@ nav {
     color: white;
     padding: 0 0.5vw;
     font-size: 0.8em;
-    white-space: nowrap;
     /*evite le retour à la ligne du sous menu*/
+    white-space: nowrap;
 }
 
 .item:hover {
@@ -135,7 +131,6 @@ nav {
 /****************************** PARTIE 1 ******************************/
 
 
-
 .titreSemaine {
     padding: 0.3em;
     font-size: 1em;
@@ -143,7 +138,6 @@ nav {
     flex: none;
     background: linear-gradient(#225ca1, #7fbdef);
     justify-content: center;
-
 }
 
 .cookieSemaine {
@@ -151,12 +145,10 @@ nav {
     flex-direction: column;
     height: 35vh;
     overflow-y: scroll;
-    background-color: #f7f7f7;
-    
+    background-color: #f7f7f7; 
 }
 
-.ingredients,
-.recette {
+.ingredients, .recette {
     flex-direction: column;
 }
 
