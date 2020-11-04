@@ -72,22 +72,44 @@ nav {
     background-position: left;
     padding: 0.5em;
     justify-content: center;
+    
 }
 
-.menu {
-
+.bouton {
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
     border-radius: 0.2em;
     flex: none;
-    background: linear-gradient(#06314F, #3093B2);
+    background: linear-gradient(#225ca1, #7fbdef);
     padding: 0.5em;
     color: white;
     border: 2px solid #06314F;
+    
+}
+/* .bouton:hover{
+    background: linear-gradient(#225ca1, #7fbdef); 
+    border: 1px solid black;
+} */
+
+.menu{
+    flex-direction: column;
+    align-items: center;
 }
 
 
+.menu:hover .sousmenu{
+    display: flex;
+}
+
+.sousmenu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    
+    background: linear-gradient(#225ca1, #7fbdef);
+    margin-top: 2.3em;
+}
 
 /****************************** CONTENU ******************************/
 
