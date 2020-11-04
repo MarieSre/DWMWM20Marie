@@ -150,6 +150,7 @@ nav {
 
 .ingredients, .recette {
     flex-direction: column;
+    margin: 1em;
 }
 
 /****************************** PARTIE 2 ******************************/
