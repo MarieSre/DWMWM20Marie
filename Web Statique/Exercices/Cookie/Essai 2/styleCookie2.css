@@ -22,7 +22,15 @@ img {
 }
 
 video {
-    width: 35vh;
+    
+    width: 100%;
+}
+
+.espace{
+    flex: 0.2;
+}
+.espaceHor {
+    height: 5vh;
 }
 
 /****************************** HEADER ******************************/
@@ -55,7 +63,7 @@ footer {
     justify-content: center;
 }
 
-.titrePage{
+.titrePage {
     padding: 0.2em;
     font-family: Impact, Charcoal, sans-serif;
     font-size: 3em;
@@ -63,6 +71,7 @@ footer {
     text-transform: uppercase;
     text-shadow: white 0.1em 0.1em 0.2em;
 }
+
 /****************************** MENU ******************************/
 
 nav {
@@ -72,42 +81,46 @@ nav {
     background-position: left;
     padding: 0.5em;
     justify-content: center;
-    
+
 }
 
-.bouton {
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: center;
-    border-radius: 0.2em;
+.menu {
     flex: none;
+    /*chaque bouton prend sa taille */
     background: linear-gradient(#225ca1, #7fbdef);
-    padding: 0.5em;
+    border: solid #326280 3px;
+    border-radius: 5px;
+    font-size: 2em;
     color: white;
-    border: 2px solid #225ca1;
-    white-space: nowrap;
+    padding: 0 0.5vw;
+    position: relative;
 }
 
-.menu{
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-
-.menu:hover .sousmenu{
+.menu:hover .sousmenu {
     display: flex;
-    
+
 }
 
-.sousmenu{
+.sousmenu {
+
     display: none;
     flex-direction: column;
     position: absolute;
-    color: white;
+    margin-top: 1.5em;
+    margin-left: -0.5vw;
     background: linear-gradient(#225ca1, #7fbdef);
-    margin-top: 2.1em;
-    border-radius: 0.2em;
+    border-radius: 5px;
+    color: white;
+    padding: 0 0.5vw;
+    font-size: 0.8em;
+    white-space: nowrap;
+    /*evite le retour à la ligne du sous menu*/
+}
+
+.item:hover {
+    color:lightsteelblue;
+    border: 1px solid lightsteelblue;
+    border-radius: 5px;
 }
 
 /****************************** CONTENU ******************************/
@@ -121,29 +134,29 @@ nav {
 
 /****************************** PARTIE 1 ******************************/
 
-.partie1 {
-    padding: 1em;
-}
+
 
 .titreSemaine {
     padding: 0.3em;
     font-size: 1em;
     font-weight: bold;
     flex: none;
-    background: linear-gradient(#225ca1, #7fbdef);;
+    background: linear-gradient(#225ca1, #7fbdef);
     justify-content: center;
 
 }
 
 .cookieSemaine {
+    flex: 3;
     flex-direction: column;
-    flex: 8;
     height: 35vh;
-    background-color: #f7f7f7;
     overflow-y: scroll;
+    background-color: #f7f7f7;
+    
 }
 
-.ingredients, .recette{
+.ingredients,
+.recette {
     flex-direction: column;
 }
 
@@ -168,11 +181,19 @@ nav {
     text-align: justify;
 }
 
-aside{
+aside {
     padding: 0.2em;
     display: flex;
     flex: 0.1;
     border: blue 1px solid;
     border-radius: 6px;
     align-items: center;
+}
+
+/****************************** MEDIA QUERIES ******************************/
+@media screen and (max-width:1200px)
+{
+    .page{
+        width: 90vw;
+    }
 }
