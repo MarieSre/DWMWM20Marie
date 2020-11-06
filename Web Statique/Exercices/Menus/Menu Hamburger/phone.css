@@ -1,0 +1,27 @@
+@media screen and (max-width:800px) {
+
+    .groupe {
+        display: block;
+    }
+
+    header {
+        display: block;
+
+    }
+
+    .menu {
+        display: flex;
+        width: 18vw;
+        flex-direction: column;
+    }
+
+    nav {
+        display: none;
+    }
+    .sousmenu{
+        width: 80%;
+    }
+    .groupe:hover nav {
+        display: block;
+    }
+}

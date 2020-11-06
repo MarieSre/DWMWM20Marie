@@ -1,0 +1,56 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+div{
+    display: flex;
+    
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-image: url(../image/fond1.png);
+    padding: 0.2vw 1em;
+    
+}
+
+.menu {
+    flex: none;
+    /*chaque bouton prend sa taille */
+    background-color: lightsalmon;
+    border: solid brown 3px;
+    border-radius: 3px;
+    font-size: 2em;
+    color: white;
+    padding: 0 0.5vw;
+    position: relative;
+}
+
+.menu:hover .sousmenu {
+    display: flex;
+    
+}
+.menu:hover{
+    background-color: rgb(250, 97, 79);
+}
+
+.sousmenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 1.5em;
+    margin-left: -0.5vw;
+    background-color: lightsalmon;
+    border-radius: 5px;
+    color: white;
+    padding: 0 0.5vw;
+    font-size: 0.8em;
+    /*evite le retour à la ligne du sous menu*/
+    white-space: nowrap;
+}
+
+.item:hover {
+    color:brown;
+    background-color: rgb(250, 97, 79);
+    border-radius: 5px;
+}
