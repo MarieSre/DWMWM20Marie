@@ -32,6 +32,7 @@ nav {
 }
 .menu:hover{
     background-color: rgb(250, 97, 79);
+    color: brown;
 }
 
 .sousmenu {

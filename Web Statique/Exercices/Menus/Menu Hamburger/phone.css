@@ -1,6 +1,6 @@
 @media screen and (max-width:800px) {
 
-    .groupe {
+    /* .groupe {
         display: block;
     }
 
@@ -23,5 +23,48 @@
     }
     .groupe:hover nav {
         display: block;
+    } */
+
+    .groupe {
+        display: block;
     }
+
+    header {
+        display: block;
+        padding: 0.5em;
+        background-color: lightsalmon;
+        border: solid brown 3px;
+        border-radius: 3px;
+        font-size: 2em;
+        color: white;
+        padding: 0 0.5vw;
+        
+    }
+
+    header:hover {
+        background-color: rgb(250, 97, 79);
+        color: brown;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .sousmenu {
+        z-index: 1;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .groupe:hover nav {
+        display: block;
+    }
+
+    .sousmenu {
+        width: 80%;
+        /* position: none; */
+    }
+
 }
