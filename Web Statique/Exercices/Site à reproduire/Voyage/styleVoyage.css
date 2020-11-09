@@ -1,88 +1,129 @@
 /****************************** GLOBAL ******************************/
-html, body{
+html,
+body {
     margin: 0;
     padding: 0;
 }
 
-body{
-    justify-content: center;
-    font-family: 'Helvetica';
-}
 
-div{
+div,
+header,
+footer,
+article {
     display: flex;
     flex: 1;
     border: 2px black dashed;
 }
 
-img{
+img {
     width: 100%;
 }
-.espace{
-    flex: 1;
-}
-.espaceHor{
-    flex: none;
-    height: 9vh;
 
+.page {
+    flex-direction: column;
 }
-/****************************** HEADER******************************/
-header{
-    background-image: url(../Voyage/images/sky.jpg);
+
+body {
+    background-image: url(../Voyage/images/bg.jpg);
     background-size: cover;
-    background-position: center;
-    display: flex;
-    padding: 2em;
+}
+
+.espace {
+    height: 25vh;
+}
+
+.espaceHor {
+    flex: 0.5;
+}
+
+/****************************** HEADER******************************/
+header {
+    background-image: url("images/sky.jpg");
+    background-size: cover;
+    padding: 2vw;
+}
+
+.titre {
+    flex: 3;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    font-weight: 800;
+    letter-spacing: 0.225em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo{
+    padding: 2vw;
 }
 
 /****************************** FOOTER ******************************/
-footer{
-    display: flex;
-    background-image: url(../Voyage/images/pp.jpg);
-    background-position-y: top;
+footer {
+    background-image: url("images/pp.jpg");
     background-size: cover;
-    padding: 1.5em;
-    
-}
-
-/****************************** PAGE ******************************/
-
-.page{
-    width: 80vw;
-    flex-direction: column;
-    flex: none;
-    display: block; 
-}
-
-.titrePage, .piedPage{
-    flex: 5;
-    justify-content: center;
-    font-weight: bold;
-    letter-spacing: 0.2em;
+    padding: 2vw;
 
 }
-.titrePage{
-    padding: 3em;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    letter-spacing: 0.2em;
-}
+
 
 /****************************** CONTENU ******************************/
-.contenu{
-    background-image: url(../Voyage/images/bg.jpg);
+
+.contenu {
     display: block;
     background-size: cover;
 }
 
-article{
-    background-color: white;
-    
+.partie {
+    display: block;
 }
-/****************************** PARTIE 1 ******************************/
-.titreArticle{
+
+
+.article {
+    background-color: white;
+}
+
+.titreArticle {
     justify-content: center;
     font-weight: bold;
     font-size: 1.5em;
+}
+
+.destinations {
+    display: flex;
+    justify-content: center;
+
+}
+
+.paris {
+    background-image: url(images/08.jpg);
+    color: white;
+}
+
+.londres {
+    background-image: url(images/07.jpg);
+}
+
+.rome {
+    background-image: url(images/06.jpg)
+}
+
+.bali {
+    background-image: url(images/05.jpg);
+}
+
+.crete {
+    background-image: url(images/04.jpg);
+}
+
+.barcelone {
+    background-image: url(images/03.jpg);
+}
+
+.istanbul {
+    background-image: url(images/02.jpg);
+}
+
+.marrakech {
+    background-image: url(images/01.jpg);
+    color: wheat;
 }
