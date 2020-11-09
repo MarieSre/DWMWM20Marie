@@ -1,0 +1,89 @@
+/****  GENERAL ****/
+html, body {
+	margin : 0;
+	padding : 0;
+}
+
+div, header, footer, nav, article {
+	display : flex;
+	flex : 1;
+	/* border: 2px black dashed; */
+}
+
+img, video {
+	width : 100%;
+}
+.espaceHor{
+	flex: 5;
+}
+
+/****************************** HEADER ******************************/
+
+header{
+	
+	background-color: white;
+	padding-bottom: 5vh;
+}
+.espaceHeader{
+	flex: 5;
+}
+.menuHam{
+	padding: 2em
+}
+.menuHam:hover, .menuPois:hover, .profil:hover{
+	border: 3px solid lightgrey;
+	border-radius: 7em;
+}
+
+.menuPois{
+	padding: 2em;
+}
+
+.profil{
+	border-radius: 7em;
+	padding : 2em;
+}
+
+.logo{
+	flex: 2;
+}
+/****************************** FOOTER ******************************/
+
+footer{
+	padding: 10vh;
+}
+.icon{
+	margin-top: auto;
+	flex-direction: column;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+.boutonFooter{
+	border: lightgrey solid 2px;
+	border-radius: 8em;
+	padding: 1em
+}
+.texteBouton{
+	padding: 2em;
+}
+/****************************** NAV ******************************/
+nav{
+	background-color: whitesmoke;
+	padding: 2.5em;
+	border-top: lightgrey solid 2px;
+	border-bottom: lightgrey solid 2px;
+}
+.bouton{
+	border: grey 1px solid;
+	border-radius: 0.3em;
+	color:blue;
+	justify-content: center;
+}
+/****************************** Input ******************************/
+input{
+	flex-direction: row;
+	flex: 3;
+	border: grey 1px solid;
+	padding: 7em 18em;
+}

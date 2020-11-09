@@ -12,7 +12,7 @@ footer,
 article {
     display: flex;
     flex: 1;
-    border: 2px black dashed;
+    /* border: 2px black dashed; */
 }
 
 img {
@@ -117,67 +117,71 @@ footer {
     font-size: 3em;
     text-align: center;
     letter-spacing: 0.225em;
-
+    padding: 2em
 }
 
 .destinations {
     align-content: center;
     justify-content: center;
     background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
     font-weight: bold;
     font-size: 1.2em;
-    padding: 4em;
     line-height: 1.7em;
-    letter-spacing: 0.65em;
+    letter-spacing: 0.53em;
 }
 
-.paris {
+#id1 {
+    flex: 0.2;
     background-image: url(images/08.jpg);
     color: wheat;
-    padding: 3em;
+    padding: 1.9em;
     background-size: cover;
 }
 
-.londres {
+#id2 {
+    
     background-image: url(images/07.jpg);
-    padding: 3em;
+    padding: 1.9em;
     background-size: cover;
 }
 
-.rome {
+#id3 {
     background-image: url(images/06.jpg);
-    padding: 3em;
+    padding: 2.5em;
     background-size: cover;
 }
 
-.bali {
+#id4 {
     background-image: url(images/05.jpg);
-    padding: 3em;
+    padding: 2.5em;
     background-size: cover;
 }
 
-.crete {
+#id5 {
+    flex: 0.5;
     background-image: url(images/04.jpg);
-    padding: 3em;
+    padding: 2.5em;
     background-size: cover;
 }
 
-.barcelone {
+#id6 {
+    flex: 0.5;
     background-image: url(images/03.jpg);
-    padding: 3em;
+    padding: 2.5em;
     background-size: cover;
 }
 
-.istanbul {
+#id7 {
     background-image: url(images/02.jpg);
-    padding: 3em;
+    padding: 2.5em;
     background-size: cover;
 }
 
-.marrakech {
+#id8 {
     background-image: url(images/01.jpg);
     color: wheat;
-    padding: 3em;
+    padding: 2.5em;
     background-size: cover;
 }
