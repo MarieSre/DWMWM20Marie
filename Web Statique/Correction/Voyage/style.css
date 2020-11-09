@@ -86,7 +86,7 @@ footer {
     font-family: "Open Sans", Helvetica, sans-serif;
     background-size: cover;
 }
-
+/*titreArticle*/
 .texteTitre {
     align-self: center;
     justify-content: center;
@@ -99,7 +99,7 @@ footer {
     font-family: "Open Sans", Helvetica, sans-serif;
     flex: 0.5;
 }
-
+/*texteArticle*/
 .texteDetail {
     align-self: center;
     justify-content: center;

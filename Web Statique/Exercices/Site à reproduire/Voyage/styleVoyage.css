@@ -75,55 +75,109 @@ footer {
 
 .partie {
     display: block;
+    font-family: "Open Sans", Helvetica, sans-serif;
 }
 
+/** PARTIE 1 **/
 
 .article {
+    flex-direction: column;
     background-color: white;
 }
 
 .titreArticle {
+    flex: 0.3;
     justify-content: center;
+    align-self: center;
+    text-align: center;
+    padding: 3vh;
     font-weight: bold;
     font-size: 1.5em;
+    line-height: 1.5em;
+    letter-spacing: 0.2em;
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.texteArticle{
+    align-self: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 5vh;
+    line-height: 1.2em;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    display: block;
+    
+}
+
+/** PARTIE 2 **/
+
+.titreDestination{
+    justify-content: center;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: 0.225em;
+
 }
 
 .destinations {
-    display: flex;
+    align-content: center;
     justify-content: center;
-
+    background-size: cover;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 4em;
+    line-height: 1.7em;
+    letter-spacing: 0.65em;
 }
 
 .paris {
     background-image: url(images/08.jpg);
-    color: white;
+    color: wheat;
+    padding: 3em;
+    background-size: cover;
 }
 
 .londres {
     background-image: url(images/07.jpg);
+    padding: 3em;
+    background-size: cover;
 }
 
 .rome {
-    background-image: url(images/06.jpg)
+    background-image: url(images/06.jpg);
+    padding: 3em;
+    background-size: cover;
 }
 
 .bali {
     background-image: url(images/05.jpg);
+    padding: 3em;
+    background-size: cover;
 }
 
 .crete {
     background-image: url(images/04.jpg);
+    padding: 3em;
+    background-size: cover;
 }
 
 .barcelone {
     background-image: url(images/03.jpg);
+    padding: 3em;
+    background-size: cover;
 }
 
 .istanbul {
     background-image: url(images/02.jpg);
+    padding: 3em;
+    background-size: cover;
 }
 
 .marrakech {
     background-image: url(images/01.jpg);
     color: wheat;
+    padding: 3em;
+    background-size: cover;
 }
