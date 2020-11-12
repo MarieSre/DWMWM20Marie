@@ -1,0 +1,100 @@
+/****************************** GLOBAL ******************************/
+html, body {
+	margin : 0;
+	padding : 0;
+}
+
+div, header, footer, nav, article {
+	display : flex;
+	flex : 1;
+	border: 1px black dashed;
+}
+
+img, video {
+	width : 100%;
+}
+
+a{
+	text-decoration: none;
+	display: flex;
+	
+}
+
+body{
+	background-image: url("../IMG/fond.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+}
+/****************************** HEADER ******************************/
+
+header{
+	background-color: burlywood;
+	background-size: cover;
+	padding: 0.5em;
+}
+
+/****************************** FOOTER ******************************/
+footer{
+	background-color: burlywood;
+}
+
+/****************************** PAGE ******************************/
+
+.titrePage{
+	flex: 2;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+	font-family: fantasy;
+	padding: 0.2em;
+	letter-spacing: 0.2em;
+}
+/****************************** NAV ******************************/
+
+nav{
+	justify-content: center;
+	background-color: beige;
+	padding: 1em;
+}
+
+.menu{
+	flex: none;
+	position: relative;
+	border: rgb(46, 11, 11) 2px solid;
+	border-radius: 0.5em;
+	font-size: 1.5em;
+}
+
+.soumenu{
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	white-space: nowrap;
+}
+
+/****************************** ARTICLES ******************************/
+
+.contenu{
+	background-color: rgb(212, 190, 172);
+	justify-content: center;
+	padding: 2em;
+}
+
+.colonne{
+	flex-direction: column;
+}
+
+.article{
+	display: block;
+}
+.titreArticle{
+	justify-content: center;
+	
+}
+
+.texteArticle{
+	
+	padding: 2em;
+	text-align: justify;
+}
