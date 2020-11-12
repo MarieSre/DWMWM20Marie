@@ -7,7 +7,7 @@ html, body {
 div, header, footer, nav, article {
 	display : flex;
 	flex : 1;
-	border: 1px black dashed;
+	/* border: 1px black dashed; */
 }
 
 img, video {
@@ -21,25 +21,34 @@ a{
 }
 
 body{
-	background-image: url("../IMG/fond.jpg");
+	background-image: url("../IMG/fond.jpg") ;
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
+	
+}
+.espaceHor{
+	flex: 2;
 }
 /****************************** HEADER ******************************/
 
 header{
 	background-color: burlywood;
-	background-size: cover;
-	padding: 0.5em;
 }
-
+.logo{
+	flex: 0.3;
+}
 /****************************** FOOTER ******************************/
 footer{
 	background-color: burlywood;
 }
 
 /****************************** PAGE ******************************/
+
+.colonne{
+	flex-direction: column;
+	
+}
 
 .titrePage{
 	flex: 2;
@@ -56,20 +65,24 @@ nav{
 	justify-content: center;
 	background-color: beige;
 	padding: 1em;
+	
 }
 
 .menu{
 	flex: none;
 	position: relative;
 	border: rgb(46, 11, 11) 2px solid;
-	border-radius: 0.5em;
-	font-size: 1.5em;
+	border-radius: 0.2em;
+	font-size: 1.2em;
+	padding: 0.5em
 }
 
-.soumenu{
+.sousMenu{
+	border: rgb(46, 11, 11) 2px solid;
 	display: none;
 	flex-direction: column;
 	position: absolute;
+	padding: 1em;
 	white-space: nowrap;
 }
 
@@ -81,12 +94,15 @@ nav{
 	padding: 2em;
 }
 
-.colonne{
-	flex-direction: column;
-}
 
 .article{
 	display: block;
+}
+
+.imageArticle{
+	position: center;
+	width: 20vw;
+	
 }
 .titreArticle{
 	justify-content: center;
