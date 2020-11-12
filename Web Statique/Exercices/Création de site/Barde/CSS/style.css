@@ -4,7 +4,7 @@ html, body {
 	padding : 0;
 }
 
-div, header, footer, nav, article {
+div, header, footer, nav, article, body {
 	display : flex;
 	flex : 1;
 	/* border: 1px black dashed; */
@@ -16,15 +16,13 @@ img, video {
 
 a{
 	text-decoration: none;
-	display: flex;
-	
+	color: inherit
 }
 
 body{
-	background-image: url("../IMG/fond.jpg") ;
-	background-repeat: no-repeat;
+	/*Indique à l'image qu'elle ne doit se centrer, rester fix et qu'elle ne doit pas se répeter*/
+	background: url("../IMG/fond.jpg") no-repeat center fixed;
 	background-size: cover;
-	display: flex;
 	
 }
 .espaceHor{
@@ -36,17 +34,17 @@ header{
 	background-color: burlywood;
 }
 .logo{
-	flex: 0.3;
+	flex: 0.5;
 }
 /****************************** FOOTER ******************************/
 footer{
 	background-color: burlywood;
 }
-
 /****************************** PAGE ******************************/
 
-.colonne{
+.page{
 	flex-direction: column;
+	width: 80vw;
 	
 }
 
@@ -55,7 +53,6 @@ footer{
 	justify-content: center;
 	align-items: center;
 	font-size: 2em;
-	font-family: fantasy;
 	padding: 0.2em;
 	letter-spacing: 0.2em;
 }
@@ -64,53 +61,96 @@ footer{
 nav{
 	justify-content: center;
 	background-color: beige;
-	padding: 1em;
-	
+	padding: 0.2em;
 }
 
 .menu{
 	flex: none;
 	position: relative;
-	border: rgb(46, 11, 11) 2px solid;
-	border-radius: 0.2em;
+	border: #2e0b0b 2px solid;
+	border-radius: 0.5em;
 	font-size: 1.2em;
-	padding: 0.5em
+	padding: 0.5em;
+	background-color: #502b10;
+	color: burlywood;
+	
 }
 
+.menu:hover .sousMenu{
+	display: flex;
+
+}
+.menu:hover{
+	background-color: burlywood;
+	color: chocolate;
+	border-radius: 0.5em;
+	
+}
 .sousMenu{
-	border: rgb(46, 11, 11) 2px solid;
-	display: none;
+	margin-top: 1.4em;
+	margin-left: -0.5em;
+	border: #2e0b0b 2px solid;
+	display:none;
 	flex-direction: column;
 	position: absolute;
-	padding: 1em;
+	padding: 0.4em;
 	white-space: nowrap;
+	background-color: #502b10;
+	color: burlywood;
+	border-radius: 0.5em;
+	font-size: 1.2em;
+}
+.item:hover{
+	background-color:burlywood;
+	color:  #502b10;
+	background-size: cover;
+	border-radius: 0.3em;
 }
 
 /****************************** ARTICLES ******************************/
 
 .contenu{
-	background-color: rgb(212, 190, 172);
+	
 	justify-content: center;
+	align-items: center;
 	padding: 2em;
+	
+	
 }
 
+article{
+	background-color: #d4beac;
+	flex: 0.7;
+}
 
 .article{
-	display: block;
+	padding: 1em;
+	flex-direction: column;
+	align-items: center;
+	width: 50vw;
 }
 
 .imageArticle{
-	position: center;
-	width: 20vw;
-	
+	width: 15vw;
+}
+
+.illustration{
+	display: block;
+	width: 35vw;
 }
 .titreArticle{
 	justify-content: center;
-	
+	font-size: 1.6em;
+	font-weight: bold;
+	color: #3a200e;
+	text-decoration: underline;
+	margin-top: 0.4em;
 }
 
 .texteArticle{
-	
+	font-size: 1.2em;
+	width: 50vw;
 	padding: 2em;
 	text-align: justify;
+	color: #502b10;
 }
