@@ -1,4 +1,4 @@
-/****  GENERAL ****/
+/****************************** GLOBAL ******************************/
 html, body {
 	margin : 0;
 	padding : 0;
@@ -16,6 +16,52 @@ img, video {
 .espaceHor{
 	flex: 2;
 }
+
+.espace{
+	height: 23vh;
+}
+
+body{
+	background-image: url(../IMG/bg.jpg);
+	background-size: cover;
+}
+
 .colonne{
 	flex-direction: column;
 }
+/****************************** HEADER ******************************/
+
+header{
+	background-image: url(../IMG/sky.jpg);
+	background-size: cover;
+	padding: 2vh;
+	
+}
+
+.titrePage{
+	flex: 3;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 2em;
+	letter-spacing: 0.3em;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo{
+	padding: 2vw;
+}
+
+/****************************** FOOTER ******************************/
+
+footer{
+	background-image: url(../IMG/pp.jpg);
+	background-size: cover;
+	padding: 2vw;
+}
+
+/****************************** CONTENU ******************************/
+.partie{
+	display: block;
+}
+
