@@ -7,23 +7,23 @@ html, body {
 div, header, footer, nav, article {
 	display : flex;
 	flex : 1;
+	/* border: black dashed 1px; */
 }
 
 img, video {
 	width : 100%;
 }
-
 .espaceHor{
-	flex: 2;
+	flex: 0.5;
 }
-
 .espace{
-	height: 23vh;
+	height: 25vh;
 }
 
 body{
 	background-image: url(../IMG/bg.jpg);
 	background-size: cover;
+	
 }
 
 .colonne{
@@ -43,7 +43,7 @@ header{
 	align-items: center;
 	justify-content: center;
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 2.5em;
 	letter-spacing: 0.3em;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -59,9 +59,94 @@ footer{
 	background-size: cover;
 	padding: 2vw;
 }
-
+.piedPage{
+	font-weight: bold;
+	font-size: 2.5em;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 0.2em;
+}
 /****************************** CONTENU ******************************/
 .partie{
 	display: block;
 }
 
+/****************************** PARTIE 1 ******************************/
+.article{
+	background-color: white;
+}
+
+.titreArticle{
+	
+	align-items: center;
+	text-align: center;
+	font-weight: 800;
+	font-size: 1em;
+	line-height: 1.5;
+	letter-spacing: 0.3em;
+	font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.texteArticle{
+	text-align: justify;
+	padding: 3em;
+	font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+/****************************** PARTIE 2 ******************************/
+
+.titreDestination{
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	font-size: 3em;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	padding: 1em;
+}
+
+.texte{
+	font-weight: 800;
+	padding: 5vh;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-size: 1.3em;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	line-height: 1.5;
+	background-size: cover;
+}
+
+#id1{
+	background-image: url(../IMG/08.jpg);
+	color: wheat;
+}
+
+#id2{
+	background-image: url(../IMG/07.jpg);
+}
+
+#id3{
+	background-image: url(../IMG/06.jpg);
+}
+
+#id4{
+	background-image: url(../IMG/05.jpg);
+}
+
+#id5{
+	background-image: url(../IMG/04.jpg);
+}
+
+#id6{
+	background-image: url(../IMG/03.jpg);
+}
+
+#id7{
+	background-image: url(../IMG/02.jpg);
+}
+
+#id8{
+	background-image: url(../IMG/01.jpg);
+	color: wheat;
+}
