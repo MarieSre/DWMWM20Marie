@@ -1,0 +1,37 @@
+/****************************** GENERAL ******************************/
+html, body {
+	margin : 0;
+	padding : 0;
+}
+
+div, header, footer, nav, article {
+	display : flex;
+	flex : 1;
+}
+
+img, video {
+	width : 100%;
+}
+
+body{
+	background-image: url(../IMG/fond.jpg);
+}
+.colonne{
+	flex-direction: column;
+}
+/****************************** HEADER ******************************/
+
+header{
+	background-image: url(../IMG/header.jpg);
+	font-family: Impact, Charcoal, sans-serif;
+	text-shadow: white 0.2em;
+	font-size: 3em;
+}
+
+/****************************** FOOTER ******************************/
+
+footer{
+	background-image: url(../IMG/fond1.png);
+	background-position: top;
+	padding: 2em;
+}
