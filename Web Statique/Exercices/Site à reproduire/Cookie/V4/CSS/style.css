@@ -1,0 +1,53 @@
+/****************************** GENERAL ******************************/
+html, body {
+	margin : 0;
+	padding : 0;
+}
+
+div, header, footer, nav, article {
+	display : flex;
+	flex : 1;
+}
+
+img, video {
+	width : 100%;
+}
+
+
+/****************************** HEADER ******************************/
+
+header{
+	background-image: url(../IMG/header.jpg);
+	background-size: cover;
+	padding: 2em;
+}
+
+/****************************** FOOTER ******************************/
+
+footer{
+	background-image: url(../IMG/fond1.png);
+	background-position: top;
+	background-size: cover;
+}
+
+/****************************** PAGE ******************************/
+
+.page{
+	flex-direction: column;
+}
+
+.partie1, .partie2{
+	flex-direction: column;
+}
+
+/****************************** NAV ******************************/
+
+
+
+/****************************** PARTIE 1 ******************************/
+
+
+
+/****************************** PARTIE 2 ******************************/
+
+
