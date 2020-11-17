@@ -1,0 +1,71 @@
+/****************************** GENERAL ******************************/
+html, body {
+	margin : 0;
+	padding : 0;
+}
+
+div, header, footer, nav, article, form {
+	display : flex;
+	flex : 1;
+}
+
+img, video {
+	width : 100%;
+}
+
+.espace{
+	padding: 0.3em;
+}
+
+/****************************** HEADER ******************************/
+header{
+	justify-content: center;
+}
+
+/****************************** FORM ******************************/
+
+form{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2em;
+	flex: none;
+}
+
+.titreForm{
+	flex-direction: column;
+	font-weight: bold;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	align-items: center;
+}
+
+input{
+	border-radius: 0.5em;
+	background-color: #b8b0b0;
+	
+	font-weight: bold;
+	font-size: 1em;
+	padding: 0.2em;
+}
+
+/****************************** FILESET ******************************/
+
+legend{
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	padding: 0.5em;
+	font-size: 1.2em;
+	border-radius: 0.5em;
+}
+
+.case{
+	border: black 1px solid;
+	padding: 1em;
+	border-radius: 0.2em;
+	background-color: #a9a9a9;
+	font-weight: bold;
+}
+
+
+

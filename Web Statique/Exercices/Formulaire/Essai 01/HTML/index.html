@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Test de formulaire</title>
+	<link rel="stylesheet" href="../CSS/style.css">
+
+</head>
+
+<body>
+
+	<header>
+		<h2>Test de formulaire</h2>
+	</header>
+
+	<form>
+		<div class="titreForm">Nom
+			<!--Permet d'écrire du texte-->
+			<input type="text" name="Nom"><br>
+		</div>
+		<div class="titreForm">Prénom
+			<input type="text" name="Prénom">
+		</div>
+		<div class="titreForm">Date de Naissance
+			<!--Permet de renseigner une date (comme une date de naissance -->
+			<input type="date" name="DateDeNaissance">
+		</div>
+		<div class="titreForm">Mail
+			<!--Permet de renseigner un mail-->
+			<input type="email" name="Mail">
+		</div>
+		<!--Permet de joindre un fichier-->
+		<div class="titreForm">Vous pouvez joindre un fichier
+			<input type="file" name="Fichier">
+		</div>
+		<div class="espace"></div>
+		<div class="titreForm">
+			Insérer une image
+			<input type="image">
+		</div>
+		<!--Permet de renseigner une heure ou un temps quelconque-->
+		<div class="titreForm">
+			Heure
+			<input type="time">
+		</div>
+		<div class="espace"></div>
+		<div class="espace"></div>
+
+		<fieldset>
+			<legend>Quel est votre nourriture favorite</legend>
+			<!--Formulaire permettant de cocher une case-->
+			<input type="radio" id="cookie" name="food">
+			<label for="cookie">Cookie</label><br>
+			<input type="radio" id="croissant" name="food">
+			<label for="cookie">Croissant</label><br>
+			<input type="radio" id="pizza" name="food">
+			<label for="cookie">Pizza</label><br>
+		</fieldset>
+
+		<div class="espace"></div>
+		<div class="espace"></div>
+
+		<div class="case">
+			<label for="test">Ceci est un test<br></label>
+			<!--Formulaire permettant de cocher ou décocher une case-->
+			<input type="checkbox" name="test" id="test"><br>
+
+		</div>
+		<div class="case">
+			<label for="test2">Avez vous tout remplis ?</label>
+			<input type="checkbox" name="test2" id="test2">
+		</div>
+	</form>
+
+	<footer>
+
+	</footer>
+
+</body>
+
+</html>

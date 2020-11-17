@@ -7,19 +7,32 @@ html, body {
 div, header, footer, nav, article {
 	display : flex;
 	flex : 1;
+	/* border: black dashed 1px; */
 }
 
 img, video {
 	width : 100%;
 }
 
+.espace{
+	height: 5vh;
+}
+
+.espaceHor{
+	flex: 0.5;
+}
+
+body{
+	background-image: url(../IMG/fond.jpg);
+	background-position: center;
+	display: flex;
+	justify-content: center;
+}
 
 /****************************** HEADER ******************************/
 
 header{
 	background-image: url(../IMG/header.jpg);
-	background-size: cover;
-	padding: 2em;
 }
 
 /****************************** FOOTER ******************************/
@@ -34,16 +47,80 @@ footer{
 
 .page{
 	flex-direction: column;
+	flex: none;
+	width: 80vw;;
 }
 
 .partie1, .partie2{
 	flex-direction: column;
 }
 
+.titrePage, .piedPage{
+	font-family: Impact, Charcoal, sans-serif;
+	flex: 8;
+	justify-content: center;
+	align-items: center;
+}
+
+.titrePage{
+	font-size: 3em;
+	text-shadow: white 0.2em 0.2em 0.2em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	padding: 0.2em;
+}
+
+.piedPage{
+	color: white;
+	font-size: 1.5em;
+	letter-spacing: 0.2em;
+}
+.contenu{
+	padding: 2em;
+	background-color: #e6ece9;
+}
 /****************************** NAV ******************************/
 
+nav{
+	background-image: url(../IMG/fond1.png);
+	background-position: right;
+	justify-content: center;
+	padding: 0.2vw 1em;
+}
 
 
+.menu{
+	background: linear-gradient(#225ca1, #7fbdef);
+	position: relative;
+	flex: none;
+	font-size: 1.5em;
+	border: solid #326280 3px;
+	color: white;
+	border-radius: 0.2em;
+	padding: 0.2vw;
+}
+
+.menu:hover .sousMenu{
+	display: flex;
+}
+
+.sousMenu{
+	background: linear-gradient(#225ca1, #7fbdef);
+	display: none;
+	position: absolute;
+	flex-direction: column;
+	white-space: nowrap;
+	color: white;
+	margin-top: 1.4em;
+	margin-left: -0.5vw;
+	border-radius: 0.2em;
+}
+
+.items:hover{
+	background-color: #225ca1;
+	color: #7fbdef;
+	border-radius: 0.3em;
+}
 /****************************** PARTIE 1 ******************************/
 
 
