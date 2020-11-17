@@ -4,9 +4,10 @@ html, body {
 	padding : 0;
 }
 
-div, header, footer, nav, article {
+div, header, footer, nav, article{
 	display : flex;
 	flex : 1;
+	border: 1px dashed black;
 }
 
 img, video {
@@ -15,23 +16,148 @@ img, video {
 
 body{
 	background-image: url(../IMG/fond.jpg);
+	background-position: center;
+	display: flex;
+	justify-content: center;
 }
-.colonne{
+
+.espace{
+	flex: 0.2;
+}
+
+.espaceHor{
+	height:5vh;
+}
+
+.partie1, .partie2{
 	flex-direction: column;
 }
+
 /****************************** HEADER ******************************/
 
 header{
 	background-image: url(../IMG/header.jpg);
-	font-family: Impact, Charcoal, sans-serif;
-	text-shadow: white 0.2em;
-	font-size: 3em;
+	background-size: cover;
 }
+
 
 /****************************** FOOTER ******************************/
 
 footer{
 	background-image: url(../IMG/fond1.png);
 	background-position: top;
+	
+}
+
+
+/****************************** PAGE ******************************/
+
+.colonne{
+	flex-direction: column;
+	width: 80vw;
+	flex: none;
+	
+}
+
+.titrePage, .piedPage{
+	flex: 8;
+	justify-content: center;
+	align-items: center;
+	font-family: Impact, Charcoal, sans-serif;
+}
+
+.titrePage{
+	text-shadow: white 1em 1em 1em;
+	font-size: 3em;
+}
+
+
+.piedPage{
+	color: whitesmoke;
+	font-size: 1.5em;
+	letter-spacing: 0.3em;
+}
+
+/****************************** NAV ******************************/
+
+nav{
+	justify-content: center;
+	background-image: url(../IMG/fond1.png);
+	background-position: right;
+	padding: 0.2em;
+}
+
+.menu, .sousMenu{
+	background: linear-gradient(#225ca1, #7fbdef);
+	color: white;
+	border-radius: 4px;
+}
+
+.menu{
+	flex: none;
+	border: solid #326280 3px;
+	padding: 0.5vw;
+	font-size: 1.5em;
+	border-radius: 0.3em;
+	position: relative;
+}
+
+.menu:hover, .sousMenu{
+	display: flex;
+}
+.sousMenu{
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	white-space: nowrap;
+	font-size: 0.8em;
+}
+.item:hover{
+	color: lightslategray;
+	background-color: lightskyblue;
+	border-radius: 0.3em;
+}
+
+/****************************** CONTENU ******************************/
+
+.contenu{
+	background-color: #e6ece9;
 	padding: 2em;
+}
+
+/****************************** PARTIE 1 ******************************/
+
+.titreSemaine{
+	padding: 0.3em;
+	flex: none;
+	background: linear-gradient(#225ca1, #7fbdef);
+	font-weight: bold;
+	justify-content: center;
+	font-size: 1em;
+}
+
+.coookieSemaine{
+	flex: 3;
+	background-color: #f7f7f7; 
+	overflow: scroll;
+	height: 30vh;
+	flex-direction: column;
+	
+}
+.ingredients, .recette{
+	flex-direction: column;
+	margin: 1em;
+}
+
+
+
+/****************************** PARTIE 2 ******************************/
+
+.texteArticle{
+	flex-direction: column;
+}
+
+aside{
+	border: blue 1px solid;
+	border-radius: 0.2em;
 }

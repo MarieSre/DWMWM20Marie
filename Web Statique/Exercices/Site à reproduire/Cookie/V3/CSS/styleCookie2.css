@@ -1,0 +1,192 @@
+/****************************** GLOBAL ******************************/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../IMG/fond.jpg);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    display: flex;
+    flex: 1;
+}
+
+img {
+    width: 100%;
+}
+
+video {
+    
+    width: 100%;
+}
+/*Permet de régler l'espacement entre le header et le cookie semaine*/
+.espace{
+    flex: 0.2;
+}
+.espaceHor {
+    height: 5vh;
+}
+
+/****************************** HEADER ******************************/
+
+header {
+    background-image: url(../image/header.jpg);
+    display: flex;
+}
+
+/****************************** FOOTER ******************************/
+
+footer {
+    display: flex;
+    background-image: url(../image/fond1.png);
+    background-position: top;
+}
+
+/****************************** PAGE ******************************/
+
+.page {
+    width: 80vw;
+    flex-direction: column;
+    flex: none;
+    display: block;
+}
+
+.titrePage, .piedPage {
+    flex: 9;
+    justify-content: center;
+}
+
+.titrePage {
+    padding: 0.2em;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 3em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: white 0.1em 0.1em 0.2em;
+}
+
+/****************************** MENU ******************************/
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-image: url(../image/fond1.png);
+    background-position: left;
+    padding: 0.2vw 1em;
+    
+}
+
+.menu {
+    flex: none;
+    /*chaque bouton prend sa taille */
+    background: linear-gradient(#225ca1, #7fbdef);
+    border: solid #326280 3px;
+    border-radius: 5px;
+    font-size: 2em;
+    color: white;
+    padding: 0 0.5vw;
+    position: relative;
+}
+
+.menu:hover .sousmenu {
+    display: flex;
+}
+
+.sousmenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 1.5em;
+    margin-left: -0.5vw;
+    background: linear-gradient(#225ca1, #7fbdef);
+    border-radius: 5px;
+    color: white;
+    padding: 0 0.5vw;
+    font-size: 0.8em;
+    /*evite le retour à la ligne du sous menu*/
+    white-space: nowrap;
+}
+
+.item:hover {
+    color:lightsteelblue;
+    border: 1px solid lightsteelblue;
+    border-radius: 5px;
+}
+
+/****************************** CONTENU ******************************/
+
+.contenu {
+    flex-direction: column;
+    padding: 2em;
+    background-color: #e6ece9;
+
+}
+
+/****************************** PARTIE 1 ******************************/
+
+
+.titreSemaine {
+    padding: 0.3em;
+    font-size: 1em;
+    font-weight: bold;
+    flex: none;
+    background: linear-gradient(#225ca1, #7fbdef);
+    justify-content: center;
+}
+
+.cookieSemaine {
+    flex: 3;
+    flex-direction: column;
+    height: 35vh;
+    overflow-y: scroll;
+    background-color: #f7f7f7; 
+}
+
+.ingredients, .recette {
+    flex-direction: column;
+    margin: 1em;
+}
+
+/****************************** PARTIE 2 ******************************/
+
+.partie2 {
+    flex-direction: column;
+}
+
+.titreArticle {
+    padding: 3em;
+    font-size: 1em;
+    /*Permet de mettre le texte en gras*/
+    font-weight: bold;
+    justify-content: center;
+}
+
+.texteArticle {
+    padding: 1em;
+    flex-direction: column;
+    /*Permet de mettre le texte en justifié*/
+    text-align: justify;
+}
+
+aside {
+    padding: 0.2em;
+    display: flex;
+    flex: 0.1;
+    border: blue 1px solid;
+    border-radius: 6px;
+    align-items: center;
+}
+
+/****************************** MEDIA QUERIES ******************************/
+@media screen and (max-width:1200px)
+{
+    .page{
+        width: 90vw;
+    }
+}
