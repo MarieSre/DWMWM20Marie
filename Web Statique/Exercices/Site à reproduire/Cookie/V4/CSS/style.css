@@ -4,7 +4,7 @@ html, body {
 	padding : 0;
 }
 
-div, header, footer, nav, article {
+div, header, footer, nav{
 	display : flex;
 	flex : 1;
 	/* border: black dashed 1px; */
@@ -15,11 +15,11 @@ img, video {
 }
 
 .espace{
-	height: 5vh;
+	flex: 0.2;
 }
 
 .espaceHor{
-	flex: 0.5;
+	height: 5vh;
 }
 
 body{
@@ -48,12 +48,10 @@ footer{
 .page{
 	flex-direction: column;
 	flex: none;
-	width: 80vw;;
+	width: 80vw;
+	display: block;
 }
 
-.partie1, .partie2{
-	flex-direction: column;
-}
 
 .titrePage, .piedPage{
 	font-family: Impact, Charcoal, sans-serif;
@@ -64,7 +62,7 @@ footer{
 
 .titrePage{
 	font-size: 3em;
-	text-shadow: white 0.2em 0.2em 0.2em;
+	text-shadow: white 0.1em 0.1em 0.2em;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	padding: 0.2em;
@@ -78,6 +76,8 @@ footer{
 .contenu{
 	padding: 2em;
 	background-color: #e6ece9;
+	flex-direction: column;
+	display: block;
 }
 /****************************** NAV ******************************/
 
@@ -108,12 +108,12 @@ nav{
 	background: linear-gradient(#225ca1, #7fbdef);
 	display: none;
 	position: absolute;
-	flex-direction: column;
 	white-space: nowrap;
 	color: white;
 	margin-top: 1.4em;
 	margin-left: -0.5vw;
 	border-radius: 0.2em;
+	flex-direction: column;
 }
 
 .items:hover{
@@ -125,6 +125,51 @@ nav{
 
 
 
+.cookieSemaine{
+	flex-direction: column;
+	flex: 3;
+	background-color: #f7f7f7;
+	overflow: scroll;
+	height: 35vh;
+}
+
+.titreSemaine{
+	background: linear-gradient(#225ca1, #7fbdef);
+	flex: none;
+	padding: 0.3em;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+.ingredients, .texteSemaine{
+	margin: 1em;
+	flex-direction: column;
+}
+
 /****************************** PARTIE 2 ******************************/
 
+.partie2{
+	flex-direction: column;
+}
 
+.titreArticle{
+	padding: 3em;
+	font-weight: bold;
+	justify-content: center;
+	font-size: 1em;
+}
+
+.texteArticle{
+	flex-direction: column;
+	text-align: justify;
+	padding: 1em;
+}
+
+aside{
+	border: #0000ff 1px solid;
+	border-radius: 0.2em;
+	display: flex;
+	flex: 0.1;
+	align-items: center;
+	padding: 0.2em;
+}
