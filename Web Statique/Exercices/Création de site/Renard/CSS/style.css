@@ -29,7 +29,7 @@ img {
 
 /*Side gauche*/
 .gauche {
-    background-image: url(sideBackground.jpg);
+    background-image: url(../IMG/sideBackground.jpg);
     flex: 0.2;
     text-align: center;
     /*Alignage horizontal*/
@@ -49,7 +49,7 @@ a {
 
 /*Articles*/
 .articles {
-    background-image: url(background.jpg);
+    background-image: url(../IMG/background.jpg);
     background-size: 100%;
     color: white;
     flex: 0.8;

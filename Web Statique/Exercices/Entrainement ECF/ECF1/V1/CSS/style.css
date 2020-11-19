@@ -1,0 +1,89 @@
+/****************************** GENERAL ******************************/
+html, div, body, aside{
+	display : flex;
+	flex : 1;
+	justify-content: center;
+	/* border: black 1px dashed; */
+}
+
+body{
+	background-color: #F7EFDF;
+	width: 80%;
+	flex-direction: column;
+}
+
+img{
+	width : 100%;
+}
+
+
+/****************************** PAGE ******************************/
+
+.colonne{
+	flex-direction: column;
+}
+
+aside{
+	flex-direction: column;
+	border: 1px solid #BB8C00;
+	background-color: #F1E3C7;
+	flex: 0.2;
+}
+
+
+h2, h3, p, ul{
+	margin-top: 0;
+}
+
+
+p{
+	font-size: 1.2em;
+	text-align: justify;
+}
+
+
+strong{
+	color: #000066;
+}
+
+ul{
+	color: #006633;
+	list-style-type: circle;
+	list-style-position: outside;
+}
+
+.titrePage, h1{
+	justify-content: center;
+	text-align: center;
+}
+
+
+/****************************** INTRODUCTION ******************************/
+
+.introduction{
+	flex-direction: column;
+	display: block;
+	flex: 3;
+}
+
+.listeIntro{
+	border: #000066 1px solid;
+	border-radius: 0.4em;
+	flex: 2;
+	padding: 0.2em;
+}
+
+/****************************** ARTICLE ******************************/
+.photoGauche, .photoDroite{
+	width: 10vw;
+}
+.photoDroite{
+	float: right;
+}
+
+.photoFloat{
+	width: 20vw;
+	float: left;
+
+}
+
