@@ -1,0 +1,116 @@
+/****************************** GENERAL ******************************/
+html, body {
+	margin : 0;
+	padding : 0;
+}
+
+div, header, footer, article{
+	display : flex;
+	flex : 1;
+}
+
+body{
+	background-color: #407076;
+}
+
+img, video {
+	width : 100%;
+}
+
+.espaceMini{
+	flex: none;
+	width: 1vw;
+}
+
+.espace{
+	flex: none;
+	height: 15vh;
+}
+
+.espaceHor{
+	flex: 0.5;
+}
+
+/****************************** HEADER ******************************/
+
+.titrePage{
+	flex: 3.5;
+	margin: 2em;
+	font-size: 2em;
+	background-color: #97b1a6;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 0.7em;
+	font-weight: bold;
+}
+
+/****************************** FOOTER ******************************/
+
+.piedPage{
+	background-color: #97b1a6;
+	justify-content: center;
+	padding: 2em;
+	flex: 6;
+}
+
+/****************************** PAGE ******************************/
+
+.colonne{
+	flex-direction: column;
+}
+
+p{
+	margin: 1.4em;
+}
+
+.partie1, .partie2{
+	margin: 0.5vw;
+}
+
+/****************************** PARTIE 1 ******************************/
+
+.etiquetteVerte, .etiquetteBeige{
+	padding: 1.8em;
+}
+
+.etiquetteVerte{
+	background-color: #97b1a6;
+}
+
+.etiquetteBeige{
+	background-color: #c9c5ba;
+}
+
+/****************************** PARTIE 2 ******************************/
+
+article{
+	text-align: justify;
+	margin-bottom: 1em;
+	box-shadow: #407076 0.2em 0.3em 0.2em;
+}
+
+.sectionBeige, .sectionVerte{
+	padding: 2em;
+	margin: 1em; 
+}
+
+.articleBeige, .articleVert{
+	margin: 0.7em;
+	
+}
+
+/***** COLONNES BEIGE *****/
+.sectionBeige{
+	background-color: #c9c5ba;
+}
+
+.articleBeige{
+	padding-top: 3em;
+}
+
+
+/***** COLONNE VERTE *****/
+.sectionVerte{
+	background-color: #97b1a6;
+}
+
