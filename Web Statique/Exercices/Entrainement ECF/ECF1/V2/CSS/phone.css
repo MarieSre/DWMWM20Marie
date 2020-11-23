@@ -1,0 +1,21 @@
+@media screen and (max-width: 800px){
+
+    .introduction, .page{
+        flex-direction: column;
+    }
+    body{
+        width: 95%;
+    }
+    .vignetteDroite, .vignetteGauche{
+        width: unset;
+        
+    }
+    h3{
+        padding-top: 1em;
+        
+    }
+    h2{
+        padding-top: 0.5em;
+        padding-bottom: 1em;
+    }
+}

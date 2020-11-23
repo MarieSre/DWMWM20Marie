@@ -1,0 +1,32 @@
+@media screen and (max-width: 800px){
+
+    .espaceHor{
+        flex: 0.2;
+    }
+
+    .espace{
+        height: 15vh;
+    }
+
+    .deco{
+        flex: 0.5;
+    }
+
+    .titrePage, .piedPage{
+        font-size: 1.4em;
+    }
+
+    .titreArticle{
+        font-size: 1.2em;
+    }
+
+    .titreDestination{
+        font-size: 1.1em;
+    }
+
+    .texteDestination{
+        font-size: 1em;
+        
+    }
+
+}
