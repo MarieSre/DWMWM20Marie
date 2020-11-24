@@ -1,0 +1,24 @@
+@media screen and (max-width:800px){
+
+    .espaceHor{
+        flex: 0.2;
+    }
+
+    .contenu{
+        padding: 0.5em;
+    }
+
+    .article{
+        width: 85vw;
+    }
+
+    .texteArticle{
+        width: 75vw;
+    }
+    .illustration{
+        width: 60vw;
+    }
+    .imageArticle{
+        width: 30vw;
+    }
+}

@@ -13,7 +13,7 @@
     }
 
     .titrePage, .piedPage{
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 
     .titreArticle{
@@ -29,4 +29,40 @@
         
     }
 
+    /* Trouver le moyen le bouger les espaces avec les vignettes */
+    #paris{
+        order: 4
+        
+    }
+
+    /* #londres{
+        order: 3;
+    }
+
+    #rome{
+        order:2;
+    }
+
+    #bali{
+        order:1;
+    }
+
+    #crete{
+        order: 4;
+        
+    }
+
+    #barcelone{
+        order: 3;
+        
+    }
+
+    #istanbul{
+        order: 2;
+    }
+
+    #marrakech{
+        order: 1;
+    } */
+   
 }
