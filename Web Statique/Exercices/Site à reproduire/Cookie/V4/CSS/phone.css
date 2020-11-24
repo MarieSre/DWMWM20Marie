@@ -2,10 +2,28 @@
     .page{
         width: 90vw;
     }
-    
+    .partie1{
+        flex-direction: column;
+    }
+
+    .video{
+        width: 50%;
+        align-self: center;
+        filter: contrast(150%);
+    }
+
+    img{
+        filter: contrast(125%);
+    }
+
+    .cookieSemaine{
+        flex: none;
+    }
+
     .descriptionSemaine{
         flex-direction: column;
     }
+
     .photoSemaine{
         width: 50%;
         align-items: center;
@@ -15,6 +33,9 @@
     }
     .texteSemaine{
         font-size: 1.2em;
+    }
+    .photoSemaine{
+        align-self: center;
     }
     li{
         font-size: 1.2em;
@@ -31,6 +52,15 @@
     aside{
         font-size: 1.2em;
         height: 25vh;
+    }
+
+    .piedPage{
+        font-size: 1.1em;
+        letter-spacing: 0.1em;
+    }
+
+    .titrePage{
+        font-size: 2.4em;
     }
 
     /* Revenir plus tard pour tenter de faire fonctioner le :active*/

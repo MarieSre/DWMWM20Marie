@@ -31,14 +31,14 @@ body{
 /****************************** HEADER ******************************/
 
 header{
-	background-color: burlywood;
+	background-color: #deb887;
 }
 .logo{
 	flex: 0.5;
 }
 /****************************** FOOTER ******************************/
 footer{
-	background-color: burlywood;
+	background-color: #deb887;
 }
 /****************************** PAGE ******************************/
 
@@ -60,7 +60,7 @@ footer{
 
 nav{
 	justify-content: center;
-	background-color: beige;
+	background-color: #f5f5dc;
 	padding: 0.2em;
 }
 
@@ -72,7 +72,7 @@ nav{
 	font-size: 1.2em;
 	padding: 0.5em;
 	background-color: #502b10;
-	color: burlywood;
+	color: #deb887;
 	
 }
 
@@ -81,8 +81,8 @@ nav{
 
 }
 .menu:hover{
-	background-color: burlywood;
-	color: chocolate;
+	background-color: #deb887;
+	color: #d2691e;
 	border-radius: 0.5em;
 	
 }
@@ -96,13 +96,13 @@ nav{
 	padding: 0.4em;
 	white-space: nowrap;
 	background-color: #502b10;
-	color: burlywood;
+	color: #deb887;
 	border-radius: 0.5em;
 	font-size: 1.2em;
 }
 .item:hover{
-	background-color:burlywood;
-	color:  #502b10;
+	background-color:#deb887;
+	color:  #d2691e;
 	background-size: cover;
 	border-radius: 0.3em;
 }

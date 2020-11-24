@@ -9,7 +9,7 @@
     }
 
     .deco{
-        flex: 0.5;
+        flex: 0.4;
     }
 
     .titrePage, .piedPage{
@@ -29,11 +29,13 @@
         
     }
 
+
+
     /* Trouver le moyen le bouger les espaces avec les vignettes */
-    #paris{
+    /* #paris{
         order: 4
         
-    }
+    } */
 
     /* #londres{
         order: 3;

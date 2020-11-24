@@ -21,4 +21,13 @@
     .imageArticle{
         width: 30vw;
     }
+
+    #histoire{
+        filter: contrast(125%);
+    }
+
+    nav{
+        background-color: #ecd5bb;
+    }
+
 }

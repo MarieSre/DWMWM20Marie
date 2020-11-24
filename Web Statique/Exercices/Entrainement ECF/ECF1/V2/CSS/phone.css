@@ -8,8 +8,10 @@
     }
     .vignetteDroite, .vignetteGauche{
         width: unset;
-        
+        float: unset;
+
     }
+
     h3{
         padding-top: 1em;
         
@@ -18,4 +20,9 @@
         padding-top: 0.5em;
         padding-bottom: 1em;
     }
+
+    li{
+        font-size: 1.2em;
+    }
+
 }

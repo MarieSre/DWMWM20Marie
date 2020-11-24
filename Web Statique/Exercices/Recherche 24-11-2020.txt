@@ -1,0 +1,41 @@
+Aujourd'hui j'ai effectué beaucoup de recherche à propos des media querie, du changement d'ordre d'éléments et de l'application de filtre(comme l'augmentation des contrast sur téléphone) et je les ai essayé
+
+Media queries:
+
+https://developer.mozilla.org/fr/docs/Web/CSS/Requ%C3%AAtes_m%C3%A9dia/Utiliser_les_Media_queries
+
+https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_media_bg
+
+Order:
+
+https://developer.mozilla.org/fr/docs/Web/CSS/order
+
+https://www.w3schools.com/csSref/css3_pr_order.asp
+
+https://www.w3schools.com/csSref/tryit.asp?filename=trycss3_order
+
+Filtre/ contrast:
+
+https://developer.mozilla.org/fr/docs/Web/CSS/filter-function/contrast()
+
+https://www.w3schools.com/CSSref/css3_pr_filter.asp
+
+https://www.w3schools.com/CSSref/playit.asp?filename=playcss_filter&preval=contrast(200%25)
+
+Float: 
+
+https://developer.mozilla.org/fr/docs/Web/CSS/float.
+
+https://www.w3schools.com/CSSref/pr_class_float.asp
+
+https://www.w3schools.com/CSSref/tryit.asp?filename=trycss_float
+
+https://www.w3schools.com/CSSref/tryit.asp?filename=trycss_float5
+
+Je vais également me renseigner sur les :root
+
+https://developer.mozilla.org/fr/docs/Web/CSS/:root
+
+https://www.w3schools.com/cssref/sel_root.asp
