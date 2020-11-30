@@ -28,6 +28,15 @@ body{
 .espaceHor{
 	flex: 2;
 }
+
+:root{
+	--marronFonce: #2e0b0b;
+	--chocolat: #502b10;
+	--orange: #d2691e;
+	--article: #d4beac;
+	--nav: #f5f5dc;
+}
+
 /****************************** HEADER ******************************/
 
 header{
@@ -60,20 +69,19 @@ footer{
 
 nav{
 	justify-content: center;
-	background-color: #f5f5dc;
+	background-color: var(--nav);
 	padding: 0.2em;
 }
 
 .menu{
 	flex: none;
 	position: relative;
-	border: #2e0b0b 2px solid;
+	border: var(--marronFonce) 2px solid;
 	border-radius: 0.5em;
 	font-size: 1.2em;
 	padding: 0.5em;
-	background-color: #502b10;
+	background-color: var(--chocolat);
 	color: #deb887;
-	
 }
 
 .menu:hover .sousMenu{
@@ -82,27 +90,27 @@ nav{
 }
 .menu:hover{
 	background-color: #deb887;
-	color: #d2691e;
+	color: var(--orange);
 	border-radius: 0.5em;
 	
 }
 .sousMenu{
 	margin-top: 1.4em;
 	margin-left: -0.5em;
-	border: #2e0b0b 2px solid;
+	border: var(--marronFonce) 2px solid;
 	display:none;
 	flex-direction: column;
 	position: absolute;
 	padding: 0.4em;
 	white-space: nowrap;
-	background-color: #502b10;
+	background-color: var(--chocolat);
 	color: #deb887;
 	border-radius: 0.5em;
 	font-size: 1.2em;
 }
 .item:hover{
 	background-color:#deb887;
-	color:  #d2691e;
+	color:  var(--orange);
 	background-size: cover;
 	border-radius: 0.3em;
 }
@@ -114,12 +122,10 @@ nav{
 	justify-content: center;
 	align-items: center;
 	padding: 2em;
-	
-	
 }
 
 article{
-	background-color: #d4beac;
+	background-color: var(--article);
 	flex: 0.7;
 }
 
@@ -142,7 +148,7 @@ article{
 	justify-content: center;
 	font-size: 1.6em;
 	font-weight: bold;
-	color: #3a200e;
+	color: var(--marronFonce);
 	text-decoration: underline;
 	margin-top: 0.4em;
 }
@@ -152,5 +158,5 @@ article{
 	width: 50vw;
 	padding: 2em;
 	text-align: justify;
-	color: #502b10;
+	color: var(--chocolat)
 }
